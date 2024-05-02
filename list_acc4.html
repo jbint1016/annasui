@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANNASUI</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/AnnasuiJquery.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="newsPopup">
+        <small>NEWSLETTER</small>
+        <div>
+            <h2>
+                <img src="images/logo.png" alt="annasui">
+            </h2>
+            <p>
+                <strong>Claim Your15% OFF</strong>
+                Join the World of Anna Sui for 
+                this exclusive discount* on your 
+                first order.
+                *exclusions apply
+            </p>
+        </div>
+        <img src="images/popup.png" alt="annasui">
+        <div>
+            <input type="email" placeholder="Email Address" required>
+            <input type="submit" value="CONTINUE">
+        </div>
+        <input type="button" value="close" class="closeBtn">
+    </div>
+
+    <div id="accountPopup">
+        <h2>Sign in to your account</h2>
+        <form action="index.html">
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <div>
+                <a href="forget.html">Forgot your Password?</a>
+            </div>
+            <div>
+                <a href="summary.html">Sign In</a>
+                <a href="createAccount.html">Create an Account</a>
+            </div>
+        </form>
+        <input type="button" value="close" class="closeBtn">
+    </div>
+
+    <div id="cartPopup">
+        <div id="emptyBox">
+            <h2>Your Bag is empty.</h2>
+            <a href="index.html">Shop now</a>
+        </div>
+        <div id="haveBox" class="active">
+            <div>
+                <h2>My Cart
+                    <small>1 items</small>
+                </h2>
+                <h3>Subtotal
+                    <strong>₩76,000</strong>
+                </h3>
+                <span>
+                    <a href="list_fragrance.html">Continue Shopping</a>
+                    <a href="checkout.html">Checkout</a>
+                </span>
+            </div>   
+            <ul>
+                <li>
+                    <img src="images/li_01.png" alt="Signature Fragrance Mini Set">
+                    <div>
+                        <small>New: A FRAGRANCE</small>
+                        <h3>Signature Fragrance Mini Set</h3>
+                        <span>5set- <strong>₩76,000</strong></span>
+                    </div>
+                    <div>
+                        <span>
+                            <button>-</button>
+                            <strong>1</strong>
+                            <button>+</button>
+                        </span>
+                        <input type="button" value="Remove" class="removeBtn">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <input type="button" value="close" class="closeBtn">
+    </div>
+
+    <header>  
+        <div>
+            <span>
+                <img src="images/us.svg" alt="us">
+                <u>UNITED STATE OF AMERICA (USD)</u>
+            </span>
+            <p>Free U.S. shipping for all orders over $150!</p>
+            <input type="button" value="NEWSLETTER" data-popup="newsPopup" class="openBtn">
+        </div>
+        <nav>
+            <button type="button" class="openBtn material-symbols-outlined">
+                menu
+            </button>
+            <div>
+                <ul id="menuPopup">
+                    <li data-menu="fragrance">FRAGRANCE</li>
+                    <li data-menu="beauty">BEAUTY</li>
+                    <li data-menu="accessories">ACCESSORIES</li>
+                    <li data-menu="life">LIFESTYLE &amp; DECOR</li>
+                    <li class="mui" data-menu="about">ABOUT ANNASUI</li>
+                    <li class="mui" data-menu="search">SEARCH</li>
+                    <li class="mui"><input type="button" value="account" class="openBtn" data-popup="accountPopup"></li>
+                    <li class="mui"><input type="button" value="cart" class="openBtn" data-popup="cartPopup"></li>
+                </ul>
+                <h1>
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="welcome to annasui">
+                    </a>
+                </h1>
+                <div class="sideBox">
+                    <ul>
+                        <li data-menu="about">ABOUT ANNASUI</li>
+                        <li data-menu="search">SEARCH</li>
+                    </ul>
+                    <input type="button" value="account" class="openBtn" data-popup="accountPopup">
+                    <input type="button" value="cart" class="openBtn" data-popup="cartPopup"><span>₩</span>
+                </div>
+            </div>
+            <div>
+                <input type="button" value="closeMenu" class="closeBtn">
+                <ul id="fragrance" class="gnbPanel">
+                    <li><a href="list_fragrance.html">All Fragrance</a></li>
+                    <li><a href="detail_Fragrance_Mini_Set.html">New: Fragrance Mini Set</a></li>
+                    <li><a href="detail_Sundae_Pretty_Pink.html">NEW: Sundae Collection</a></li>
+                    <li><a href="detail_Fantasia_Pop.html">NEW: Fantasia Pop Surprise</a></li>
+                    <li><a href="detail_Cosmic_Sky.html">NEW: Cosmic Sky</a></li>
+                    <li><a href="detail_Anna_Sui_Classic.html">Anna Sui Classic</a></li>
+                    <li><a href="detail_Fantasia.html">Fantasia</a></li>
+                    <li><a href="detail_Fantasia_Mermaid.html">Fantasia Mermaid</a></li>
+                    <li><a href="detail_Flight_of_Fancy.html">Flight of Fancy</a></li>
+                    <li><a href="detail_La_Vie_De_Boheme.html">La Vie de Boheme</a></li>
+                    <li><a href="detail_Lucky_Wish.html">Lucky Wish</a></li>
+                    <li><a href="detail_Secret_Wish.html">Secret Wish</a></li>
+                    <li><a href="detail_Sky.html">Sky</a></li>
+                    <li><a href="detail_Sui_Dreams_Eau_de_Toilette.html">Sui Dreams</a></li>
+                    <li><a href="list_fragrance.html">View All</a></li>
+                </ul>
+                <ul id="beauty" class="gnbPanel">
+                    <li><a href="list_beauty1.html">All Cosmetics</a></li>
+                    <li><a href="newCosmetics1.html">New Cosmetics</a></li>
+                    <li><a href="cheeks.html">Cheeks</a></li>
+                    <li><a href="eyes.html">Eyes</a></li>
+                    <li><a href="face.html">Face</a></li>
+                    <li><a href="lips.html">Lips</a></li>
+                    <li><a href="nails.html">Nails</a></li>
+                    <li><a href="skincare.html">Skincare &amp; Hair</a></li>
+                    <li><a href="suiblack.html">Sui Black</a></li>
+                    <li><a href="beautyAccessories.html">Beauty Accessories</a></li>
+                    <li><a href="beautygift.html">Beauty Gift Sets</a></li>
+                    <li><a href="list_beauty1.html">View All</a></li>
+                </ul>
+                <ul id="accessories" class="gnbPanel">
+                    <li><a href="list_acc1.html">All Accessories</a></li>
+                    <li><a href="bags1.html">Bags &amp; Wallets</a></li>
+                    <li><a href="gloves.html">Gloves</a></li>
+                    <li><a href="hairAccessories.html">Hair Accessories</a></li>
+                    <li><a href="hats.html">Hats &amp; Scarves</a></li>
+                    <li><a href="jewelry.html">Jewelry</a></li>
+                    <li><a href="shoes.html">Shoes</a></li>
+                    <li><a href="socks.html">Socks &amp; Tights</a></li>
+                    <li><a href="sunglasses.html">Sunglasses</a></li>
+                    <li><a href="list_acc1.html">View All</a></li>
+                </ul>
+                <ul id="life" class="gnbPanel">
+                    <li><a href="list_life1.html">All Lifestyle/Decor</a></li>
+                    <li><a href="books.html">Books &amp; Stationery</a></li>
+                    <li><a href="handkerchiefs.html">Handkerchiefs</a></li>
+                    <li><a href="washcloths.html">Washcloths</a></li>
+                    <li><a href="vanityAccessories.html">Vanity Accessories</a></li>
+                    <li><a href="list_life1.html">View All</a></li>
+                </ul>
+                <ul id="about" class="gnbPanel">
+                    <li><a href="about.html">About Anna</a></li>
+                </ul>
+                <ul id="search" class="gnbPanel">
+                    <li>
+                        <h3>Looking for something?</h3>
+                        <input type="search" placeholder="Enter Your Search" title="insert your keywords">
+                        <div>
+                            <a href="fitting.html">FITTING &amp; SIZING</a>
+                            <a href="contact.html">CONTACT US</a>
+                            <a href="shipping.html">SHIPPING &amp; RETURNS</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="listContainer">
+        <div>
+            <span>
+                SHOP / <strong>ACCESSORIES</strong> 
+            </span>
+            <h2>
+                ACCESSORIES
+            </h2>
+            <div>
+                <small>Sort by:</small>
+                <input type="button" value="Featured" data-popup="sortPopup" class="openBtn">
+            </div>
+        </div>
+
+        <div id="sortPopup">
+            <div>
+                <input type="radio" name="select_sort" id="sort_01" class="closeBtn">
+                <label for="sort_01">Featured</label>
+            </div>
+            <div>
+                <input type="radio" name="select_sort" id="sort_02">
+                <label for="sort_02">Low to high</label>
+            </div>
+            <div>
+                <input type="radio" name="select_sort" id="sort_03">
+                <label for="sort_03">High to low</label>
+            </div>
+        </div>
+
+        <div>
+            <ul>
+                <li>
+                    <a href="detail_Moon_and_Butterfly_Long_Necklace_Rose_Gold.html"><img src="images/li_a91.png" alt="Moon and Butterfly Long Necklace Rose Gold"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Moon and Butterfly Long Necklace
+                            Rose Gold</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩209,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Butterfly_and_Moon_Necklace_Set_Black.html"><img src="images/li_a92.png" alt="Butterfly and Moon Necklace Set Black"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Butterfly and Moon Necklace 
+                            Set Black</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩162,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Butterfly_Stud_Earrings_Black_Multi.html"><img src="images/li_a93.png" alt="Butterfly Stud Earrings Black Multi"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Butterfly Stud Earrings Black Multi</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩108,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Butterfly_Stud_earrings_Rose_Gold_Multi.html"><img src="images/li_a94.png" alt="Butterfly Stud earrings Rose Gold Multi"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Butterfly Stud earrings Rose Gold Multi</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩108,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Butterfly_Bracelet_Black_Multi.html"><img src="images/li_a95.png" alt="Butterfly Bracelet Black Multi"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Butterfly Bracelet Black Multi</h3>
+                        <span>★★★★★ (4)</span>
+                    </div>
+                    <div>
+                        <strong>₩108,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Butterfly_Bracelet_Rose_Gold.html"><img src="images/li_a96.png" alt="Butterfly Bracelet Rose Gold"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Butterfly Bracelet Rose Gold</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩108,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Rabbit_Charm_Necklace_Gold_Multi.html"><img src="images/li_a97.png" alt="Rabbit Charm Necklace Gold Multi"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Rabbit Charm Necklace Gold Multi</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩169,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Rabbit_Stud_Earrings_White_Multi.html"><img src="images/li_a98.png" alt="Rabbit Stud Earrings White Multi"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Rabbit Stud Earrings White Multi
+                        </h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩149,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Chanel_White_Rabbit_Ring_White_Multi.html"><img src="images/li_a99.png" alt="Chanel White Rabbit Ring White Multi"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Chanel White Rabbit Ring White Multi</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩162,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Rose_Stud_Earrings_Magenta_Multi.html"><img src="images/li_a100.png" alt="Rose Stud Earrings Magenta Multi"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Rose Stud Earrings Magenta Multi</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩149,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Ali_Rapp_for_Anna_Sui_Ooh_Boy_Tote_Bag_Black_Multi.html"><img src="images/li_a101.png" alt="Ali Rapp for Anna Sui Ooh Boy!!! Tote Bag Black Multi"></a>   
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Ali Rapp for Anna Sui "Ooh Boy!!!" 
+                            Tote Bag Black Multi</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩162,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Ali_Rapp_for_Anna_Sui_Ooh_Boy_Tote_Bag_Grey.html"><img src="images/li_a102.png" alt="Ali Rapp for Anna Sui Ooh Boy!!! Tote Bag Grey"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Ali Rapp for Anna Sui "Ooh Boy!!!"
+                            Tote Bag Grey</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩162,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Ali_Rapp_for_Anna_Sui_Mini_Purse_White.html"><img src="images/li_a103.png" alt="Ali Rapp for Anna Sui Mini Purse White"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Ali Rapp for Anna Sui Mini Purse White</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <input type="button" value="Sold Out" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Gotote_Peacock_Fantasy_Tote_Bag_Red_Multi.html"><img src="images/li_a104.png" alt="Gotote Peacock Fantasy Tote Bag Red Multi"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Gotote Peacock Fantasy Tote Bag 
+                            Red Multi</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩384,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Gotote_Peacock_Tote_Bag_Purple_Multi.html"><img src="images/li_a105.png" alt="Gotote Peacock Tote Bag Purple Multi"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Gotote Peacock Tote Bag
+                            Purple Multi</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩384,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Titi_Crossbody_Bag_Black.html"><img src="images/li_a106.png" alt="Titi Crossbody Bag Black"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Titi Crossbody Bag Black</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩142,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Titi_Crossbody_Bag_Gray.html"><img src="images/li_a107.png" alt="Titi Crossbody Bag Gray"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Titi Crossbody Bag Gray
+                        </h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩142,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Chase_Crossbody_Black.html"><img src="images/li_a108.png" alt="Chase Crossbody Black"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Chase Crossbody Black</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩573,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Miniature_Chase_Crossbody_Gold.html"><img src="images/li_a109.png" alt="Miniature Chase Crossbody Gold"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Miniature Chase Crossbody Gold
+                        </h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩418,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Sunflower_Tote_Brown_Multi.html"><img src="images/li_a110.png" alt="Sunflower Tote Brown Multi"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Sunflower Tote Brown Multi</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩384,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Voyage_Tote_Black.html"><img src="images/li_a111.png" alt="Voyage Tote Black"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Voyage Tote Black
+                        </h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩384,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Small_Voyage_Tote_Black.html"><img src="images/li_a112.png" alt="Small Voyage Tote Black"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Small Voyage Tote Black</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩337,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Anyone_Fanny_Pack_Black.html"><img src="images/li_a113.png" alt="Anyone Fanny Pack Black"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Anyone Fanny Pack Black</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩256,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Anyone_Bucket_Bag_Khaki.html"><img src="images/li_a114.png" alt="Anyone Bucket Bag Khaki"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Anyone Bucket Bag Khaki
+                        </h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩243,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Roger_Wallet_Black.html"><img src="images/li_a115.png" alt="Roger Wallet Black"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Roger Wallet Black</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩304,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Roger_Wallet_Wine.html"><img src="images/li_a116.png" alt="Roger Wallet Wine"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Roger Wallet Wine</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩304,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Small_Roger_Wallet_Wine.html"><img src="images/li_a117.png" alt="Small Roger Wallet Wine"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Small Roger Wallet Wine</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩256,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Small_Roger_Wallet_Black.html"><img src="images/li_a118.png" alt="Small Roger Wallet Black"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Small Roger Wallet Black</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩256,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Chase_Wallet_Black.html"><img src="images/li_a119.png" alt="Chase Wallet Black"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Chase Wallet Black</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩356,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Small_Chase_Wallet_Gold.html"><img src="images/li_a120.png" alt="Small Chase Wallet Gold"></a>
+                    <div>
+                        <small>ACCESSORIES</small>
+                        <h3>Small Chase Wallet Gold</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩329,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="sortPopup" class="openBtn">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pager">
+            <a href="list_acc3.html" class="active">arrow1</a>
+            <ol>
+                <li>
+                    <a href="list_acc1.html">1</a>
+                    <a href="list_acc2.html">2</a>
+                    <a href="list_acc3.html">3</a>
+                    <a href="list_acc4.html" class="active">4</a>
+                </li>
+            </ol>
+            <a href="list_acc4.html">arrow1</a>
+        </div>
+
+
+        <div>
+            <img src="images/FantasiaNotes1.webp" alt="fantasianotes perfume">
+            <div>
+                <h3>15% Off Your First Order</h3>
+                <p>Claim Your 15% OFF
+                    Join the World of Anna Sui 
+                    for this exclusive discount* on your first order.
+                    *exclusions apply
+                </p>
+                <span>OUR PRIVACY POLICY</span>
+                <span>Policy<a href="privacy.html"> here.</a></span>
+                <div>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="submit" value="CONTINUE">
+                </div>
+            </div>
+            <span>CREATED BY ANNA SUI CBE</span>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <div>
+                <h2>★ JOIN OUR MAILING LIST ★</h2>
+                <input type="email" placeholder="15% Off Your First Order" required>
+                <input type="submit" value="JOIN">
+            </div>
+            <div>
+                <h2 class="active">EXPLORE</h2>
+                <ul>
+                    <!-- list order 변경 -->
+                    <li><a href="about.html">ABOUT ANNA SUI</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="shipping.html">SHIPPING &amp; RETURNS</a></li>
+                    <li><a href="store.html">STORE LOCATIONS</a></li>
+                    <li><a href="fitting.html">FITTING &amp; SIZING</a></li>
+                    <li><a href="https://annasui.co.jp/">JAPANESE WEBSITE</a></li>
+                    <li><a href="terms.html">TERMS OF SERVICE</a></li>
+                    <li><a href="privacy.html">PRIVACY POLICY</a></li>
+                    <li><a href="statement.html">ACCESSIBILITY STATEMENT</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="mailto:contactus@annasui.com">asd@annasui.com</a>
+                <ul>
+                    <li><a href="https://www.facebook.com/annasuipage/">facebook</a></li>
+                    <li><a href="https://www.instagram.com/annasui/">instargram</a></li>
+                    <li><a href="https://twitter.com/annasui">tiwtter</a></li>
+                    <li><a href="https://www.pinterest.co.kr/worldofannasui/">pin</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCTHD_8igkZNtgjN9F2ODgdg">youtube</a></li>
+                    <li><a href="https://m.weibo.cn/u/6900750444?luicode=10000011&lfid=231522type%3D1%26t%3D10%26q%3D%23ANNA%20SUI%23">weibo</a></li>
+                </ul>
+                <p>COPYRIGHT © ANNA SUI DOWNTOWN</p>
+            </div>
+            <div>
+                <a href="about.html">© ANNA SUI
+                    DOWNTOWN</a>
+                <a href="privacy.html">PRIVACY 
+                    POLICY</a>
+                <a href="terms.html">TERMS OF 
+                    SERVICE</a>
+                <button>South Korea (KRW  ₩)</button>
+                <!-- button tag -->
+                <!-- <img src="images/us.svg" alt="us">
+                <p>UNITED STATE OF AMERICA (USD)</p> -->
+                <!-- 위내용수정대로 -->
+                <span>
+                    <img src="images/us.svg" alt="us">
+                    <u>UNITED STATE OF AMERICA (USD)</u>
+                </span>
+            </div>
+        </div>
+        <div class="top_button">
+            <a href="#">arrow</a>
+        </div>
+    </footer>
+</body>
+</html>

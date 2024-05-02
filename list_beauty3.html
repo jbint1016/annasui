@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANNASUI</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/AnnasuiJquery.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="newsPopup">
+        <small>NEWSLETTER</small>
+        <div>
+            <h2>
+                <img src="images/logo.png" alt="annasui">
+            </h2>
+            <p>
+                <strong>Claim Your15% OFF</strong>
+                Join the World of Anna Sui for 
+                this exclusive discount* on your 
+                first order.
+                *exclusions apply
+            </p>
+        </div>
+        <img src="images/popup.png" alt="annasui">
+        <div>
+            <input type="email" placeholder="Email Address" required>
+            <input type="submit" value="CONTINUE">
+        </div>
+        <input type="button" value="close" class="closeBtn">
+    </div>
+
+    <div id="accountPopup">
+        <h2>Sign in to your account</h2>
+        <form action="index.html">
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <div>
+                <a href="forget.html">Forgot your Password?</a>
+            </div>
+            <div>
+                <a href="summary.html">Sign In</a>
+                <a href="createAccount.html">Create an Account</a>
+            </div>
+        </form>
+        <input type="button" value="close" class="closeBtn">
+    </div>
+
+    <div id="cartPopup">
+        <div id="emptyBox">
+            <h2>Your Bag is empty.</h2>
+            <a href="index.html">Shop now</a>
+        </div>
+        <div id="haveBox" class="active">
+            <div>
+                <h2>My Cart
+                    <small>1 items</small>
+                </h2>
+                <h3>Subtotal
+                    <strong>₩76,000</strong>
+                </h3>
+                <span>
+                    <a href="list_fragrance.html">Continue Shopping</a>
+                    <a href="checkout.html">Checkout</a>
+                </span>
+            </div>   
+            <ul>
+                <li>
+                    <img src="images/li_01.png" alt="Signature Fragrance Mini Set">
+                    <div>
+                        <small>New: A FRAGRANCE</small>
+                        <h3>Signature Fragrance Mini Set</h3>
+                        <span>5set- <strong>₩76,000</strong></span>
+                    </div>
+                    <div>
+                        <span>
+                            <button>-</button>
+                            <strong>1</strong>
+                            <button>+</button>
+                        </span>
+                        <input type="button" value="Remove" class="removeBtn">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <input type="button" value="close" class="closeBtn">
+    </div>
+
+    <header>  
+        <div>
+            <span>
+                <img src="images/us.svg" alt="us">
+                <u>UNITED STATE OF AMERICA (USD)</u>
+            </span>
+            <p>Free U.S. shipping for all orders over $150!</p>
+            <input type="button" value="NEWSLETTER" data-popup="newsPopup" class="openBtn">
+        </div>
+        <nav>
+            <button type="button" class="openBtn material-symbols-outlined">
+                menu
+            </button>
+            <div>
+                <ul id="menuPopup">
+                    <li data-menu="fragrance">FRAGRANCE</li>
+                    <li data-menu="beauty">BEAUTY</li>
+                    <li data-menu="accessories">ACCESSORIES</li>
+                    <li data-menu="life">LIFESTYLE &amp; DECOR</li>
+                    <li class="mui" data-menu="about">ABOUT ANNASUI</li>
+                    <li class="mui" data-menu="search">SEARCH</li>
+                    <li class="mui"><input type="button" value="account" class="openBtn" data-popup="accountPopup"></li>
+                    <li class="mui"><input type="button" value="cart" class="openBtn" data-popup="cartPopup"></li>
+                </ul>
+                <h1>
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="welcome to annasui">
+                    </a>
+                </h1>
+                <div class="sideBox">
+                    <ul>
+                        <li data-menu="about">ABOUT ANNASUI</li>
+                        <li data-menu="search">SEARCH</li>
+                    </ul>
+                    <input type="button" value="account" class="openBtn" data-popup="accountPopup">
+                    <input type="button" value="cart" class="openBtn" data-popup="cartPopup"><span>₩</span>
+                </div>
+            </div>
+            <div>
+                <input type="button" value="closeMenu" class="closeBtn">
+                <ul id="fragrance" class="gnbPanel">
+                    <li><a href="list_fragrance.html">All Fragrance</a></li>
+                    <li><a href="detail_Fragrance_Mini_Set.html">New: Fragrance Mini Set</a></li>
+                    <li><a href="detail_Sundae_Pretty_Pink.html">NEW: Sundae Collection</a></li>
+                    <li><a href="detail_Fantasia_Pop.html">NEW: Fantasia Pop Surprise</a></li>
+                    <li><a href="detail_Cosmic_Sky.html">NEW: Cosmic Sky</a></li>
+                    <li><a href="detail_Anna_Sui_Classic.html">Anna Sui Classic</a></li>
+                    <li><a href="detail_Fantasia.html">Fantasia</a></li>
+                    <li><a href="detail_Fantasia_Mermaid.html">Fantasia Mermaid</a></li>
+                    <li><a href="detail_Flight_of_Fancy.html">Flight of Fancy</a></li>
+                    <li><a href="detail_La_Vie_De_Boheme.html">La Vie de Boheme</a></li>
+                    <li><a href="detail_Lucky_Wish.html">Lucky Wish</a></li>
+                    <li><a href="detail_Secret_Wish.html">Secret Wish</a></li>
+                    <li><a href="detail_Sky.html">Sky</a></li>
+                    <li><a href="detail_Sui_Dreams_Eau_de_Toilette.html">Sui Dreams</a></li>
+                    <li><a href="list_fragrance.html">View All</a></li>
+                </ul>
+                <ul id="beauty" class="gnbPanel">
+                    <li><a href="list_beauty1.html">All Cosmetics</a></li>
+                    <li><a href="newCosmetics1.html">New Cosmetics</a></li>
+                    <li><a href="cheeks.html">Cheeks</a></li>
+                    <li><a href="eyes.html">Eyes</a></li>
+                    <li><a href="face.html">Face</a></li>
+                    <li><a href="lips.html">Lips</a></li>
+                    <li><a href="nails.html">Nails</a></li>
+                    <li><a href="skincare.html">Skincare &amp; Hair</a></li>
+                    <li><a href="suiblack.html">Sui Black</a></li>
+                    <li><a href="beautyAccessories.html">Beauty Accessories</a></li>
+                    <li><a href="beautygift.html">Beauty Gift Sets</a></li>
+                    <li><a href="list_beauty1.html">View All</a></li>
+                </ul>
+                <ul id="accessories" class="gnbPanel">
+                    <li><a href="list_acc1.html">All Accessories</a></li>
+                    <li><a href="bags1.html">Bags &amp; Wallets</a></li>
+                    <li><a href="gloves.html">Gloves</a></li>
+                    <li><a href="hairAccessories.html">Hair Accessories</a></li>
+                    <li><a href="hats.html">Hats &amp; Scarves</a></li>
+                    <li><a href="jewelry.html">Jewelry</a></li>
+                    <li><a href="shoes.html">Shoes</a></li>
+                    <li><a href="socks.html">Socks &amp; Tights</a></li>
+                    <li><a href="sunglasses.html">Sunglasses</a></li>
+                    <li><a href="list_acc1.html">View All</a></li>
+                </ul>
+                <ul id="life" class="gnbPanel">
+                    <li><a href="list_life1.html">All Lifestyle/Decor</a></li>
+                    <li><a href="books.html">Books &amp; Stationery</a></li>
+                    <li><a href="handkerchiefs.html">Handkerchiefs</a></li>
+                    <li><a href="washcloths.html">Washcloths</a></li>
+                    <li><a href="vanityAccessories.html">Vanity Accessories</a></li>
+                    <li><a href="list_life1.html">View All</a></li>
+                </ul>
+                <ul id="about" class="gnbPanel">
+                    <li><a href="about.html">About Anna</a></li>
+                </ul>
+                <ul id="search" class="gnbPanel">
+                    <li>
+                        <h3>Looking for something?</h3>
+                        <input type="search" placeholder="Enter Your Search" title="insert your keywords">
+                        <div>
+                            <a href="fitting.html">FITTING &amp; SIZING</a>
+                            <a href="contact.html">CONTACT US</a>
+                            <a href="shipping.html">SHIPPING &amp; RETURNS</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="listContainer">
+        <div>
+            <span>
+                SHOP / <strong>BEAUTY</strong> 
+            </span>
+            <h2>
+                BEAUTY
+            </h2>
+            <div>
+                <small>Sort by:</small>
+                <input type="button" value="Featured" data-popup="sortPopup" class="openBtn">
+            </div>
+        </div>
+
+        <div id="sortPopup">
+            <div>
+                <input type="radio" name="select_sort" id="sort_01" class="closeBtn">
+                <label for="sort_01">Featured</label>
+            </div>
+            <div>
+                <input type="radio" name="select_sort" id="sort_02">
+                <label for="sort_02">Low to high</label>
+            </div>
+            <div>
+                <input type="radio" name="select_sort" id="sort_03">
+                <label for="sort_03">High to low</label>
+            </div>
+        </div>
+
+        <div>
+            <ul>
+                <li>
+                    <a href="detail_Lip_Gift_Set.html"><img src="images/li_b61.png" alt="Lip Gift Set"></a>
+                    <div>
+                        <small>BEAUTY</small>
+                        <h3>Lip Gift Set</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩101,000</strong>
+                        <span>
+                            <input type="radio" name="select_color" id="sss_1">
+                            <label for="sss_1">401</label>
+                            <input type="radio" name="select_color" id="sss_2">
+                            <label for="sss_2">304</label>
+                            <input type="radio" name="select_color" id="sss_3">
+                            <label for="sss_3">306</label>
+                        </span>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Lip_Rouge.html"><img src="images/li_b62.png" alt="Lip Rouge"></a>
+                    <div>
+                        <small>New: BEAUTY</small>
+                        <h3>Lip Rouge</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩43,000</strong>
+                        <span>
+                            <input type="radio" name="select_color" id="ttt_1">
+                            <label for="ttt_1">001</label>
+                            <input type="radio" name="select_color" id="ttt_2">
+                            <label for="ttt_2">301</label>
+                            <input type="radio" name="select_color" id="ttt_3">
+                            <label for="ttt_3">304</label>
+                        </span>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Limited_Edition:Cheek_and_Primer_Set.html"><img src="images/li_b63.png" alt="Limited Edition: Cheek and Primer Set"></a>
+                    <div>
+                        <small>Limited Edition</small>
+                        <h3>Limited Edition: Cheek and Primer Set</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩101,000</strong>
+                        <span>
+                            <input type="radio" name="select_color" id="uuu_1">
+                            <label for="uuu_1">001</label>
+                            <input type="radio" name="select_color" id="uuu_2">
+                            <label for="uuu_2">300</label>
+                            <input type="radio" name="select_color" id="uuu_3">
+                            <label for="uuu_3">301</label>
+                        </span>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Limited_Edition_Water_Powder.html"><img src="images/li_b64.png" alt="Limited Edition Water Powder"></a>
+                    <div>
+                        <small>NEW: BEAUTY</small>
+                        <h3>Limited Edition Water Powder</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩54,000</strong>
+                        <span>
+                            <input type="radio" name="select_color" id="vvv_1">
+                            <label for="vvv_1">200</label>
+                            <input type="radio" name="select_color" id="vvv_2">
+                            <label for="vvv_2">700</label>
+                        </span>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Illuminating_Cushion_Compact_Refill.html"><img src="images/li_b65.png" alt="Illuminating Cushion Compact Refill"></a>
+                    <div>
+                        <small>NEW: BEAUTY</small>
+                        <h3>Illuminating Cushion Compact Refill</h3>
+                        <span>★★★★★ (4)</span>
+                    </div>
+                    <div>
+                        <strong>₩37,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Anna_Sui_Makeup_Sponge.html"><img src="images/li_b66.png" alt="Anna Sui Makeup Sponge"></a>
+                    <div>
+                        <small>NEW: BEAUTY</small>
+                        <h3>Anna Sui Makeup Sponge</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩7,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Foundation_Compact_Refill_Only_Anna_Sui_Makeup.html"><img src="images/li_b67.png" alt="Foundation Compact Refill Only Anna Sui Makeup"></a>
+                    <div>
+                        <small>NEW: BEAUTY</small>
+                        <h3>Foundation Compact Refill Only
+                            Anna Sui Makeup</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩38,000</strong>
+                        <span>
+                            <input type="radio" name="select_color" id="www_1">
+                            <label for="www_1">00</label>
+                            <input type="radio" name="select_color" id="www_2">
+                            <label for="www_2">10</label>
+                            <input type="radio" name="select_color" id="www_3">
+                            <label for="www_3">15</label>
+                        </span>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Foundation_Compact_Anna_Sui_Makeup.html"><img src="images/li_b68.png" alt="Foundation Compact Anna Sui Makeup"></a>
+                    <div>
+                        <small>NEW: BEAUTY</small>
+                        <h3>Foundation Compact Anna Sui Makeup
+                        </h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩49,000</strong>
+                        <span>
+                            <input type="radio" name="select_color" id="xxx_1">
+                            <label for="xxx_1">00</label>
+                            <input type="radio" name="select_color" id="xxx_2">
+                            <label for="xxx_2">10</label>
+                            <input type="radio" name="select_color" id="xxx_3">
+                            <label for="xxx_3">15</label>
+                        </span>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_SUI_BLACK_MASCARA_EYELASH_CURLER_GIFT_SET.html"><img src="images/li_b69.png" alt="SUI BLACK MASCARA & EYELASH CURLER GIFT SET"></a>
+                    <div>
+                        <small>LIMITED EDITION: </small>
+                        <h3>SUI BLACK MASCARA &amp; EYELASH 
+                            CURLER GIFT SET</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩101,000</strong>
+                        <span>
+                            <input type="radio" name="select_color" id="yyy_1">
+                            <label for="yyy_1">001</label>
+                            <input type="radio" name="select_color" id="yyy_2">
+                            <label for="yyy_2">002</label>
+                            <input type="radio" name="select_color" id="yyy_3">
+                            <label for="yyy_3">100</label>
+                        </span>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Eyelash_Curler_N.html"><img src="images/li_b70.png" alt="Eyelash Curler N"></a>
+                    <div>
+                        <small>BEAUTY</small>
+                        <h3>Eyelash Curler N</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩27,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_The_Eye_Base.html"><img src="images/li_b71.png" alt="The Eye Base"></a>
+                    <div>
+                        <small>NEW: BEAUTY</small>
+                        <h3>The Eye Base</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩41,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Foundation_and_Eye_Color_Compact_Gift_Set.html"><img src="images/li_b72.png" alt="Foundation and Eye Color Compact Gift Set"></a>
+                    <div>
+                        <small>Limited Edition:</small>
+                        <h3>Foundation and Eye Color 
+                            Compact Gift Set</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩148,000</strong>
+                        <span>
+                            <input type="radio" name="select_color" id="zzz_1">
+                            <label for="zzz_1">003</label>
+                            <input type="radio" name="select_color" id="zzz_2">
+                            <label for="zzz_2">004</label>
+                            <input type="radio" name="select_color" id="zzz_3">
+                            <label for="zzz_3">005</label>
+                        </span>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Eyebrow_Compact.html"><img src="images/li_b73.png" alt="Eyebrow Compact"></a>
+                    <div>
+                        <small>NEW: BEAUTY</small>
+                        <h3>Eyebrow Compact</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩51,000</strong>
+                        <span>
+                            <input type="radio" name="select_color" id="1_1">
+                            <label for="1_1">02</label>
+                            <input type="radio" name="select_color" id="1_2">
+                            <label for="1_2">03</label>
+                        </span>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Twinkling_Eye_Makeup_Kit.html"><img src="images/li_b74.png" alt="Twinkling Eye Makeup Kit"></a>
+                    <div>
+                        <small>Limited Edition:</small>
+                        <h3>Twinkling Eye Makeup Kit</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩67,000</strong>
+                        <span>
+                            <input type="radio" name="select_color" id="2_1">
+                            <label for="2_1">01</label>
+                            <input type="radio" name="select_color" id="2_2">
+                            <label for="2_2">02</label>
+                            <input type="radio" name="select_color" id="2_3">
+                            <label for="2_3">03</label>
+                        </span>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Loose_Face_Powder_Mini_Puff.html"><img src="images/li_b75.png" alt="Loose Face Powder Mini Puff"></a>
+                    <div>
+                        <small>NEW: BEAUTY</small>
+                        <h3>Loose Face Powder Mini Puff</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩7,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Loose_Face_Powder_Mini_Refill.html"><img src="images/li_b76.png" alt="Loose Face Powder Mini Refill"></a>
+                    <div>
+                        <small>NEW: BEAUTY</small>
+                        <h3>Loose Face Powder Mini Refill</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩30,000</strong>
+                        <span>
+                            <input type="radio" name="select_color" id="3_1">
+                            <label for="3_1">200</label>
+                            <input type="radio" name="select_color" id="3_2">
+                            <label for="3_2">300</label>
+                        </span>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Loos_Face_Powder_Mini_Compact_and_Mini_Refill_Set_Gold.html"><img src="images/li_b77.png" alt="Loose Face Powder Mini Compact and Mini Refill Set Gold"></a>
+                    <div>
+                        <small>NEW: BEAUTY</small>
+                        <h3>Loose Face Powder Mini Compact and 
+                            Mini Refill Set Gold</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩42,000</strong>
+                        <span>
+                            <input type="radio" name="select_color" id="4_1">
+                            <label for="4_1">200</label>
+                            <input type="radio" name="select_color" id="4_2">
+                            <label for="4_2">300</label>
+                        </span>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Loose_Face_Powder_Mini_Compact_and_Mini_Refill_Set_Black.html"><img src="images/li_b78.png" alt="Loose Face Powder Mini Compact and Mini Refill Set Black"></a>
+                    <div>
+                        <small>NEW: BEAUTY</small>
+                        <h3>Loose Face Powder Mini Compact and 
+                            Mini Refill Set Black</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩42,000</strong>
+                        <span>
+                            <input type="radio" name="select_color" id="5_1">
+                            <label for="5_1">200</label>
+                            <input type="radio" name="select_color" id="5_2">
+                            <label for="5_2">300</label>
+                        </span>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Loose_Face_Powder_Puff.html"><img src="images/li_b79.png" alt="Loose Face Powder Puff"></a>
+                    <div>
+                        <small>NEW: BEAUTY</small>
+                        <h3>Loose Face Powder Puff</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩7,000</strong>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Loose_Face_Powder_Refill(Large).html"><img src="images/li_b80.png" alt="Loose Face Powder Refill (Large)"></a>
+                    <div>
+                        <small>NEW: BEAUTY</small>
+                        <h3>Loose Face Powder Refill (Large)</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩49,000</strong>
+                        <span>
+                            <input type="radio" name="select_color" id="6_1">
+                            <label for="6_1">200</label>
+                            <input type="radio" name="select_color" id="6_2">
+                            <label for="6_2">300</label>
+                        </span>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+                <li>
+                    <a href="detail_Anna_Sui_Rose_Face_Powder.html"><img src="images/li_b81.png" alt="Anna Sui Rose Face Powder"></a>
+                    <div>
+                        <small>NEW: BEAUTY</small>
+                        <h3>Anna Sui Rose Face Powder</h3>
+                        <span>★★★★★ (2)</span>
+                    </div>
+                    <div>
+                        <strong>₩134,000</strong>
+                        <span>
+                            <input type="radio" name="select_color" id="7_1">
+                            <label for="7_1">200</label>
+                            <input type="radio" name="select_color" id="7_2">
+                            <label for="7_2">300</label>
+                        </span>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pager">
+            <a href="list_beauty2.html" class="active">arrow1</a>
+            <ol>
+                <li>
+                    <a href="list_beauty1.html">1</a>
+                    <a href="list_beauty2.html">2</a>
+                    <a href="list_beauty3.html" class="active">3</a>
+                </li>
+            </ol>
+            <a href="list_beauty3.html">arrow1</a>
+        </div>
+
+
+        <div>
+            <img src="images/FantasiaNotes1.webp" alt="fantasianotes perfume">
+            <div>
+                <h3>15% Off Your First Order</h3>
+                <p>Claim Your 15% OFF
+                    Join the World of Anna Sui 
+                    for this exclusive discount* on your first order.
+                    *exclusions apply
+                </p>
+                <span>OUR PRIVACY POLICY</span>
+                <span>Policy<a href="privacy.html"> here.</a></span>
+                <div>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="submit" value="CONTINUE">
+                </div>
+            </div>
+            <span>CREATED BY ANNA SUI CBE</span>
+        </div>
+
+    </div>
+
+    <footer>
+        <div>
+            <div>
+                <h2>★ JOIN OUR MAILING LIST ★</h2>
+                <input type="email" placeholder="15% Off Your First Order" required>
+                <input type="submit" value="JOIN">
+            </div>
+            <div>
+                <h2 class="active">EXPLORE</h2>
+                <ul>
+                    <!-- list order 변경 -->
+                    <li><a href="about.html">ABOUT ANNA SUI</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="shipping.html">SHIPPING &amp; RETURNS</a></li>
+                    <li><a href="store.html">STORE LOCATIONS</a></li>
+                    <li><a href="fitting.html">FITTING &amp; SIZING</a></li>
+                    <li><a href="https://annasui.co.jp/">JAPANESE WEBSITE</a></li>
+                    <li><a href="terms.html">TERMS OF SERVICE</a></li>
+                    <li><a href="privacy.html">PRIVACY POLICY</a></li>
+                    <li><a href="statement.html">ACCESSIBILITY STATEMENT</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="mailto:contactus@annasui.com">asd@annasui.com</a>
+                <ul>
+                    <li><a href="https://www.facebook.com/annasuipage/">facebook</a></li>
+                    <li><a href="https://www.instagram.com/annasui/">instargram</a></li>
+                    <li><a href="https://twitter.com/annasui">tiwtter</a></li>
+                    <li><a href="https://www.pinterest.co.kr/worldofannasui/">pin</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCTHD_8igkZNtgjN9F2ODgdg">youtube</a></li>
+                    <li><a href="https://m.weibo.cn/u/6900750444?luicode=10000011&lfid=231522type%3D1%26t%3D10%26q%3D%23ANNA%20SUI%23">weibo</a></li>
+                </ul>
+                <p>COPYRIGHT © ANNA SUI DOWNTOWN</p>
+            </div>
+            <div>
+                <a href="about.html">© ANNA SUI
+                    DOWNTOWN</a>
+                <a href="privacy.html">PRIVACY 
+                    POLICY</a>
+                <a href="terms.html">TERMS OF 
+                    SERVICE</a>
+                <button>South Korea (KRW  ₩)</button>
+                <!-- button tag -->
+                <!-- <img src="images/us.svg" alt="us">
+                <p>UNITED STATE OF AMERICA (USD)</p> -->
+                <!-- 위내용수정대로 -->
+                <span>
+                    <img src="images/us.svg" alt="us">
+                    <u>UNITED STATE OF AMERICA (USD)</u>
+                </span>
+            </div>
+        </div>
+        <div class="top_button">
+            <a href="#">arrow</a>
+        </div>
+    </footer>
+</body>
+</html>

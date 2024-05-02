@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANNASUI</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/AnnasuiJquery.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="newsPopup">
+        <small>NEWSLETTER</small>
+        <div>
+            <h2>
+                <img src="images/logo.png" alt="annasui">
+            </h2>
+            <p>
+                <strong>Claim Your15% OFF</strong>
+                Join the World of Anna Sui for 
+                this exclusive discount* on your 
+                first order.
+                *exclusions apply
+            </p>
+        </div>
+        <img src="images/popup.png" alt="annasui">
+        <div>
+            <input type="email" placeholder="Email Address" required>
+            <input type="submit" value="CONTINUE">
+        </div>
+        <input type="button" value="close" class="closeBtn">
+    </div>
+
+    <div id="accountPopup">
+        <h2>Sign in to your account</h2>
+        <form action="index.html">
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <div>
+                <a href="forget.html">Forgot your Password?</a>
+            </div>
+            <div>
+                <a href="summary.html">Sign In</a>
+                <a href="createAccount.html">Create an Account</a>
+            </div>
+        </form>
+        <input type="button" value="close" class="closeBtn">
+    </div>
+
+    <div id="cartPopup">
+        <div id="emptyBox">
+            <h2>Your Bag is empty.</h2>
+            <a href="index.html">Shop now</a>
+        </div>
+        <div id="haveBox" class="active">
+            <div>
+                <h2>My Cart
+                    <small>1 items</small>
+                </h2>
+                <h3>Subtotal
+                    <strong>₩76,000</strong>
+                </h3>
+                <span>
+                    <a href="list_fragrance.html">Continue Shopping</a>
+                    <a href="checkout.html">Checkout</a>
+                </span>
+            </div>   
+            <ul>
+                <li>
+                    <img src="images/li_01.png" alt="Signature Fragrance Mini Set">
+                    <div>
+                        <small>New: A FRAGRANCE</small>
+                        <h3>Signature Fragrance Mini Set</h3>
+                        <span>5set- <strong>₩76,000</strong></span>
+                    </div>
+                    <div>
+                        <span>
+                            <button>-</button>
+                            <strong>1</strong>
+                            <button>+</button>
+                        </span>
+                        <input type="button" value="Remove" class="removeBtn">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <input type="button" value="close" class="closeBtn">
+    </div>
+
+    <header>  
+        <div>
+            <span>
+                <img src="images/us.svg" alt="us">
+                <u>UNITED STATE OF AMERICA (USD)</u>
+            </span>
+            <p>Free U.S. shipping for all orders over $150!</p>
+            <input type="button" value="NEWSLETTER" data-popup="newsPopup" class="openBtn">
+        </div>
+        <nav>
+            <button type="button" class="openBtn material-symbols-outlined">
+                menu
+            </button>
+            <div>
+                <ul id="menuPopup">
+                    <li data-menu="fragrance">FRAGRANCE</li>
+                    <li data-menu="beauty">BEAUTY</li>
+                    <li data-menu="accessories">ACCESSORIES</li>
+                    <li data-menu="life">LIFESTYLE &amp; DECOR</li>
+                    <li class="mui" data-menu="about">ABOUT ANNASUI</li>
+                    <li class="mui" data-menu="search">SEARCH</li>
+                    <li class="mui"><input type="button" value="account" class="openBtn" data-popup="accountPopup"></li>
+                    <li class="mui"><input type="button" value="cart" class="openBtn" data-popup="cartPopup"></li>
+                </ul>
+                <h1>
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="welcome to annasui">
+                    </a>
+                </h1>
+                <div class="sideBox">
+                    <ul>
+                        <li data-menu="about">ABOUT ANNASUI</li>
+                        <li data-menu="search">SEARCH</li>
+                    </ul>
+                    <input type="button" value="account" class="openBtn" data-popup="accountPopup">
+                    <input type="button" value="cart" class="openBtn" data-popup="cartPopup"><span>₩</span>
+                </div>
+            </div>
+            <div>
+                <input type="button" value="closeMenu" class="closeBtn">
+                <ul id="fragrance" class="gnbPanel">
+                    <li><a href="list_fragrance.html">All Fragrance</a></li>
+                    <li><a href="detail_Fragrance_Mini_Set.html">New: Fragrance Mini Set</a></li>
+                    <li><a href="detail_Sundae_Pretty_Pink.html">NEW: Sundae Collection</a></li>
+                    <li><a href="detail_Fantasia_Pop.html">NEW: Fantasia Pop Surprise</a></li>
+                    <li><a href="detail_Cosmic_Sky.html">NEW: Cosmic Sky</a></li>
+                    <li><a href="detail_Anna_Sui_Classic.html">Anna Sui Classic</a></li>
+                    <li><a href="detail_Fantasia.html">Fantasia</a></li>
+                    <li><a href="detail_Fantasia_Mermaid.html">Fantasia Mermaid</a></li>
+                    <li><a href="detail_Flight_of_Fancy.html">Flight of Fancy</a></li>
+                    <li><a href="detail_La_Vie_De_Boheme.html">La Vie de Boheme</a></li>
+                    <li><a href="detail_Lucky_Wish.html">Lucky Wish</a></li>
+                    <li><a href="detail_Secret_Wish.html">Secret Wish</a></li>
+                    <li><a href="detail_Sky.html">Sky</a></li>
+                    <li><a href="detail_Sui_Dreams_Eau_de_Toilette.html">Sui Dreams</a></li>
+                    <li><a href="list_fragrance.html">View All</a></li>
+                </ul>
+                <ul id="beauty" class="gnbPanel">
+                    <li><a href="list_beauty1.html">All Cosmetics</a></li>
+                    <li><a href="newCosmetics1.html">New Cosmetics</a></li>
+                    <li><a href="cheeks.html">Cheeks</a></li>
+                    <li><a href="eyes.html">Eyes</a></li>
+                    <li><a href="face.html">Face</a></li>
+                    <li><a href="lips.html">Lips</a></li>
+                    <li><a href="nails.html">Nails</a></li>
+                    <li><a href="skincare.html">Skincare &amp; Hair</a></li>
+                    <li><a href="suiblack.html">Sui Black</a></li>
+                    <li><a href="beautyAccessories.html">Beauty Accessories</a></li>
+                    <li><a href="beautygift.html">Beauty Gift Sets</a></li>
+                    <li><a href="list_beauty1.html">View All</a></li>
+                </ul>
+                <ul id="accessories" class="gnbPanel">
+                    <li><a href="list_acc1.html">All Accessories</a></li>
+                    <li><a href="bags1.html">Bags &amp; Wallets</a></li>
+                    <li><a href="gloves.html">Gloves</a></li>
+                    <li><a href="hairAccessories.html">Hair Accessories</a></li>
+                    <li><a href="hats.html">Hats &amp; Scarves</a></li>
+                    <li><a href="jewelry.html">Jewelry</a></li>
+                    <li><a href="shoes.html">Shoes</a></li>
+                    <li><a href="socks.html">Socks &amp; Tights</a></li>
+                    <li><a href="sunglasses.html">Sunglasses</a></li>
+                    <li><a href="list_acc1.html">View All</a></li>
+                </ul>
+                <ul id="life" class="gnbPanel">
+                    <li><a href="list_life1.html">All Lifestyle/Decor</a></li>
+                    <li><a href="books.html">Books &amp; Stationery</a></li>
+                    <li><a href="handkerchiefs.html">Handkerchiefs</a></li>
+                    <li><a href="washcloths.html">Washcloths</a></li>
+                    <li><a href="vanityAccessories.html">Vanity Accessories</a></li>
+                    <li><a href="list_life1.html">View All</a></li>
+                </ul>
+                <ul id="about" class="gnbPanel">
+                    <li><a href="about.html">About Anna</a></li>
+                </ul>
+                <ul id="search" class="gnbPanel">
+                    <li>
+                        <h3>Looking for something?</h3>
+                        <input type="search" placeholder="Enter Your Search" title="insert your keywords">
+                        <div>
+                            <a href="fitting.html">FITTING &amp; SIZING</a>
+                            <a href="contact.html">CONTACT US</a>
+                            <a href="shipping.html">SHIPPING &amp; RETURNS</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="privacyContainer">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="shipping.html">SHIPPING &amp; RETURNS</a></li>
+                    <li><a href="fitting.html">FITTING &amp; SIZING</a></li>
+                    <li><a href="https://annasui.co.jp/" target="_blank">JAPANESE WEBSITE</a></li>
+                    <li><a href="terms.html">TERMS OF SERVICE</a></li>
+                    <li><a href="privacy.html" class="active">PRIVACY POLICY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="statement.html">ACCESSIBILITY STATEMENT</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div>
+            <div>
+                <h2>Privacy Policy</h2>
+                <article>
+                    <h3>PRIVACY POLICY</h3>
+                    <span>OUR PRIVACY POLICY</span>
+                    <h4>SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?</h4>
+                    <p>When you purchase something from our store, as part of the buying and selling process, we collect 
+                        the personal information you give us such as your name, address and email address.
+                        When you browse our store, we also automatically receive your computer’s internet protocol (IP) 
+                        address in order to provide us with information that helps us learn about your browser and operating system.
+                        Email marketing (if applicable): With your permission, we may send you emails about our store, new products 
+                        and other updates.
+                        Text marketing (if applicable): With your permission, we may send text messages about our store, 
+                        new products, and other updates. Updates include Checkout Reminders. Webhooks will be used to trigger 
+                        the Checkout Reminders messaging system.
+                    </p>
+                    <h4>SECTION 2 - CONSENT</h4>
+                    <p>How do you get my consent?
+                        When you provide us with personal information to complete a transaction, verify your credit card, place an order, 
+                        arrange for a delivery or return a purchase, we imply that you consent to our collecting it and using it for that 
+                        specific reason only.
+                        If we ask for your personal information for a secondary reason, like marketing, we will either ask you directly 
+                        for your expressed consent, or provide you with an opportunity to say no.
+                    </p>
+                    <p>How do I withdraw my consent?
+                        If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, 
+                        for the continued collection, use or disclosure of your information, at anytime, by contacting us 
+                        at asd@annasui.com 
+                    </p>
+                    <h4>SECTION 3 - DISCLOSURE</h4>
+                    <p>We may disclose your personal information if we are required by law to do so or if you violate 
+                        our Terms of Service.
+                    </p>
+                    <h4>SECTION 4 - SHOPIFY</h4>
+                    <p>Our store is hosted on Shopify Inc. They provide us with the online e-commerce platform that allows us to sell 
+                        our products and services to you.
+                        Your data is stored through Shopify’s data storage, databases and the general Shopify application. 
+                        They store your data on a secure server behind a firewall.
+                    </p>
+                    <p>
+                        Payment:
+                        If you choose a direct payment gateway to complete your purchase, then Shopify stores your credit card data. 
+                        It is encrypted through the Payment Card Industry Data Security Standard (PCI-DSS). Your purchase transaction 
+                        data is stored only as long as is necessary to complete your purchase transaction. After that is complete, 
+                        your purchase transaction information is deleted.
+                        All direct payment gateways adhere to the standards set by PCI-DSS as managed by the PCI Security 
+                        Standards Council, which is a joint effort of brands like Visa, Mastercard, American Express and Discover.
+                        PCI-DSS requirements help ensure the secure handling of credit card information by our store and 
+                        its service providers.
+                        For more insight, you may also want to read Shopify’s Terms of Service (https://www.shopify.com/legal/terms) 
+                        or Privacy Statement (https://www.shopify.com/legal/privacy).
+                    </p>
+                    <h4>SECTION 5 - THIRD-PARTY SERVICES</h4>
+                    <p>In general, the third-party providers used by us will only collect, use and disclose your information to the extent 
+                        necessary to allow them to perform the services they provide to us.
+                        However, certain third-party service providers, such as payment gateways and other payment transaction 
+                        processors, have their own privacy policies in respect to the information we are required to provide to them 
+                        for your purchase-related transactions.
+                        For these providers, we recommend that you read their privacy policies so you can understand the manner 
+                        in which your personal information will be handled by these providers.
+                        In particular, remember that certain providers may be located in or have facilities that are located a different 
+                        jurisdiction than either you or us. So if you elect to proceed with a transaction that involves the services of 
+                        a third-party service provider, then your information may become subject to the laws of the jurisdiction(s) 
+                        in which that service provider or its facilities are located.
+                        As an example, if you are located in Canada and your transaction is processed by a payment gateway located 
+                        in the United States, then your personal information used in completing that transaction may be subject to 
+                        disclosure under United States legislation, including the Patriot Act.
+                        Once you leave our store’s website or are redirected to a third-party website or application, you are no longer 
+                        governed by this Privacy Policy or our website’s Terms of Service.
+                    </p>
+                    <p>
+                        Links
+                        When you click on links on our store, they may direct you away from our site. We are not responsible 
+                        for the privacy practices of other sites and encourage you to read their privacy statements.
+                    </p>
+                    <h4>SECTION 6 - SECURITY</h4>
+                    <p>To protect your personal information, we take reasonable precautions and follow industry best practices 
+                        to make sure it is not inappropriately lost, misused, accessed, disclosed, altered or destroyed.
+                        If you provide us with your credit card information, the information is encrypted using secure socket layer 
+                        technology (SSL) and stored with a AES-256 encryption. Although no method of transmission over 
+                        the Internet or electronic storage is 100% secure, we follow all PCI-DSS requirements and implement additional 
+                        generally accepted industry standards.
+                    </p>
+                    <h4>SECTION 7 - COOKIES</h4>
+                    <p>Here is a list of cookies that we use. We’ve listed them here so you that you can choose if you want to opt-out 
+                        of cookies or not.
+                        _session_id, unique token, sessional, Allows Shopify to store information about your session 
+                        (referrer, landing page, etc).
+                        _shopify_visit, no data held, Persistent for 30 minutes from the last visit, Used by our website provider’s 
+                        internal stats tracker to record the number of visits
+                        _shopify_uniq, no data held, expires midnight (relative to the visitor) of the next day, Counts the number of visits 
+                        to a store by a single customer.
+                        cart, unique token, persistent for 2 weeks, Stores information about the contents of your cart.
+                        _secure_session_id, unique token, sessional
+                        storefront_digest, unique token, indefinite If the shop has a password, this is used to determine if the current 
+                        visitor has access.
+                    </p>
+                    <h4>SECTION 8 - AGE OF CONSENT</h4>
+                    <p>By using this site, you represent that you are at least the age of majority in your state or province of residence, 
+                        or that you are the age of majority in your state or province of residence and you have given us your consent to 
+                        allow any of your minor dependents to use this site.
+                    </p>
+                    <h4>SECTION 9 - CHANGES TO THIS PRIVACY POLICY</h4>
+                    <p>
+                        We reserve the right to modify this privacy policy at any time, so please review it frequently. 
+                        Changes and clarifications will take effect immediately upon their posting on the website. 
+                        If we make material changes to this policy, we will notify you here that it has been updated, so that you 
+                        are aware of what information we collect, how we use it, and under what circumstances, if any, 
+                        we use and/or disclose it.
+                    </p>
+                    <p>
+                        If our store is acquired or merged with another company, your information may be transferred to the new 
+                        owners so that we may continue to sell products to you.
+                    </p>
+                    <h4>
+                        SECTION 10 - MESSAGING PRIVACY POLICY
+                    </h4>
+                    <p>
+                        This Messaging Program Privacy Policy explains how Anna Sui collects and uses information about you 
+                        in relation to its text message marketing program (the “Messaging Service”). We use Attentive to provide 
+                        the Messaging Service to you. For the purposes of the Messaging Service, Attentive acts as our service provider 
+                        and data processor of your information.
+                    </p>
+                    <strong>
+                        Collection of Information
+                    </strong>
+                    <p>
+                        We collect various information on our behalf from and about you, including information you directly provide 
+                        when you use the Messaging Service. For example, we collect the phone number and email address you 
+                        provided when signing up for the Messaging Service. When you send messages via the Messaging Service, 
+                        we will also collect your messaging history and any information included in those messages.
+                    </p>
+                    <p>We may also collect information about you using cookies or similar technologies. Cookies are pieces of 
+                        information that are stored by your browser on the hard drive or memory of your device. Cookies enable 
+                        personalization of your experience on the Messaging Service (e.g., sending you personalized text messages 
+                        such as shopping cart reminders).
+                    </p>
+                    <p>
+                        If you participate in a contest, sweepstakes, research study, or email survey associated with the Messaging 
+                        Service, we will collect basic contact information and any other information you choose to provide in connection 
+                        with these activities. We will also collect your contact information if you contact us with questions about 
+                        the Messaging Service or for customer service.
+                    </p>
+                    <strong>
+                        Use of Information
+                    </strong>
+                    <p>
+                        We use your information to deliver, analyze, maintain and support the Messaging Service. 
+                        We may also use your information to enhance the Messaging Service features and customize and personalize 
+                        your experiences on the Messaging Service.
+                    </p>
+                    <strong>
+                        Sharing of Information
+                    </strong>
+                    <p>
+                        We may share, transfer, or disclose your information, if you consent to us doing so, as well as in the following 
+                        circumstances:
+                    </p>
+                    <p>
+                        Service Providers. We may share your information with third parties to help us provide 
+                        the Messaging Service to you.
+                        Legal Requirement and Protection of Attentive and Others. We may disclose your information as we believe
+                        such disclosure is necessary or appropriate to: (i) comply with applicable law and legal processes; 
+                        (ii) respond to requests from public and government authorities, including public and government authorities 
+                        outside your country of residence; (iii) enforce a contract with us; (iv) protect our rights, privacy, safety, 
+                        or property, and/or that of our affiliates, you or others; and (v) allow us to pursue available remedies or limit 
+                        the damages that we may sustain.
+                        From time to time, we may share aggregate or de-identified information about use of the Messaging Service 
+                        and such aggregated or de-identified information may be shared with any third party, including advertisers, 
+                        promotional partners, and sponsors.
+                    </p>
+                    <p>
+                        We take a variety of physical, technical, administrative, and organizational security measures based on 
+                        the sensitivity of the information we collect to protect your information against accidental or unlawful 
+                        destruction or accidental loss, alteration, unauthorized disclosure or access. Unfortunately, no online activity 
+                        can be guaranteed to be 100% secure. While we strive to protect your information against unauthorized use 
+                        or disclosure, we cannot ensure or warrant the security of any information you provide. We do not accept 
+                        liability for unintentional disclosure.
+                    </p>
+                    <strong>
+                        Retention of Information
+                    </strong>
+                    <p>
+                        We retain your information for as long as you participate in the Messaging Service or as needed to comply 
+                        with applicable legal obligations. We will also retain and use your information as necessary to resolve disputes, 
+                        protect us and our customers, and enforce our agreements.
+                    </p>
+                    <strong>
+                        Choices and Controls
+                    </strong>
+                    <p>
+                        Consent to receive automated marketing text messages is not a condition of any purchase. 
+                        You can opt-out of receiving further commercial text messages via the Messaging Service by responding 
+                        to any of our text messages with any of the following replies: STOP, END, CANCEL, UNSUBSCRIBE, or QUIT. 
+                        For additional opt-out information, please review our Terms.
+                    </p>
+                    <strong>
+                        Customer Care
+                    </strong>
+                    <p>
+                        If you are experiencing any problems with the Messaging Service, please visit 
+                        https://support.attentivemobile.com/help/ and submit the form with details about your problem or 
+                        your request for support, or email support@attentivemobile.com.
+                    </p>
+                    <strong>
+                        Main Privacy Policy
+                    </strong>
+                    <p>
+                        By signing up to receive text messages from us, you also agree to our main Privacy Policy (SECTIONS 1-9)
+                    </p>
+                    <strong>
+                        QUESTIONS AND CONTACT INFORMATION
+                    </strong>
+                    <p>
+                        If you would like to: access, correct, amend or delete any personal information we have about you, 
+                        register a complaint, or simply want more information contact our Privacy Compliance Officer 
+                        at asd@annasui.com or call us at 212-941-8406.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="images/FantasiaNotes1.webp" alt="fantasianotes perfume">
+        <div>
+            <h3>15% Off Your First Order</h3>
+            <p>Claim Your 15% OFF
+                Join the World of Anna Sui 
+                for this exclusive discount* on your first order.
+                *exclusions apply
+            </p>
+            <span>OUR PRIVACY POLICY</span>
+            <span>Policy<a href="privacy.html"> here.</a></span>
+            <div>
+                <input type="email" placeholder="Email Address" required>
+                <input type="submit" value="CONTINUE">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <div>
+                <h2>★ JOIN OUR MAILING LIST ★</h2>
+                <input type="email" placeholder="15% Off Your First Order" required>
+                <input type="submit" value="JOIN">
+            </div>
+            <div>
+                <h2 class="active">EXPLORE</h2>
+                <ul>
+                    <!-- list order 변경 -->
+                    <li><a href="about.html">ABOUT ANNA SUI</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="shipping.html">SHIPPING &amp; RETURNS</a></li>
+                    <li><a href="store.html">STORE LOCATIONS</a></li>
+                    <li><a href="fitting.html">FITTING &amp; SIZING</a></li>
+                    <li><a href="https://annasui.co.jp/">JAPANESE WEBSITE</a></li>
+                    <li><a href="terms.html">TERMS OF SERVICE</a></li>
+                    <li><a href="privacy.html">PRIVACY POLICY</a></li>
+                    <li><a href="statement.html">ACCESSIBILITY STATEMENT</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="mailto:contactus@annasui.com">asd@annasui.com</a>
+                <ul>
+                    <li><a href="https://www.facebook.com/annasuipage/">facebook</a></li>
+                    <li><a href="https://www.instagram.com/annasui/">instargram</a></li>
+                    <li><a href="https://twitter.com/annasui">tiwtter</a></li>
+                    <li><a href="https://www.pinterest.co.kr/worldofannasui/">pin</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCTHD_8igkZNtgjN9F2ODgdg">youtube</a></li>
+                    <li><a href="https://m.weibo.cn/u/6900750444?luicode=10000011&lfid=231522type%3D1%26t%3D10%26q%3D%23ANNA%20SUI%23">weibo</a></li>
+                </ul>
+                <p>COPYRIGHT © ANNA SUI DOWNTOWN</p>
+            </div>
+            <div>
+                <a href="about.html">© ANNA SUI
+                    DOWNTOWN</a>
+                <a href="privacy.html">PRIVACY 
+                    POLICY</a>
+                <a href="terms.html">TERMS OF 
+                    SERVICE</a>
+                <button>South Korea (KRW  ₩)</button>
+                <!-- button tag -->
+                <!-- <img src="images/us.svg" alt="us">
+                <p>UNITED STATE OF AMERICA (USD)</p> -->
+                <!-- 위내용수정대로 -->
+                <span>
+                    <img src="images/us.svg" alt="us">
+                    <u>UNITED STATE OF AMERICA (USD)</u>
+                </span>
+            </div>
+        </div>
+        <div class="top_button">
+            <a href="#">arrow</a>
+        </div>
+    </footer>
+</body>
+</html>

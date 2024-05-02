@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ANNASUI</title>
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/AnnasuiJquery.js"></script>
+        <link rel="stylesheet" href="css/import.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <div id="newsPopup">
+            <small>NEWSLETTER</small>
+            <div>
+                <h2>
+                    <img src="images/logo.png" alt="annasui">
+                </h2>
+                <p>
+                    <strong>Claim Your15% OFF</strong>
+                    Join the World of Anna Sui for 
+                    this exclusive discount* on your 
+                    first order.
+                    *exclusions apply
+                </p>
+            </div>
+            <img src="images/popup.png" alt="annasui">
+            <div>
+                <input type="email" placeholder="Email Address" required>
+                <input type="submit" value="CONTINUE">
+            </div>
+            <input type="button" value="close" class="closeBtn">
+        </div>
+    
+        <div id="accountPopup">
+            <h2>Sign in to your account</h2>
+            <form action="index.html">
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <div>
+                    <a href="forget.html">Forgot your Password?</a>
+                </div>
+                <div>
+                    <a href="summary.html">Sign In</a>
+                    <a href="createAccount.html">Create an Account</a>
+                </div>
+            </form>
+            <input type="button" value="close" class="closeBtn">
+        </div>
+    
+        <div id="cartPopup">
+            <div id="emptyBox">
+                <h2>Your Bag is empty.</h2>
+                <a href="index.html">Shop now</a>
+            </div>
+            <div id="haveBox" class="active">
+                <div>
+                    <h2>My Cart
+                        <small>1 items</small>
+                    </h2>
+                    <h3>Subtotal
+                        <strong>₩76,000</strong>
+                    </h3>
+                    <span>
+                        <a href="list_fragrance.html">Continue Shopping</a>
+                        <a href="checkout.html">Checkout</a>
+                    </span>
+                </div>   
+                <ul>
+                    <li>
+                        <img src="images/li_01.png" alt="Signature Fragrance Mini Set">
+                        <div>
+                            <small>New: A FRAGRANCE</small>
+                            <h3>Signature Fragrance Mini Set</h3>
+                            <span>5set- <strong>₩76,000</strong></span>
+                        </div>
+                        <div>
+                            <span>
+                                <button>-</button>
+                                <strong>1</strong>
+                                <button>+</button>
+                            </span>
+                            <input type="button" value="Remove" class="removeBtn">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <input type="button" value="close" class="closeBtn">
+        </div>
+    
+        <header>  
+            <div>
+                <span>
+                    <img src="images/us.svg" alt="us">
+                    <u>UNITED STATE OF AMERICA (USD)</u>
+                </span>
+                <p>Free U.S. shipping for all orders over $150!</p>
+                <input type="button" value="NEWSLETTER" data-popup="newsPopup" class="openBtn">
+            </div>
+            <nav>
+            <button type="button" class="openBtn material-symbols-outlined">
+                menu
+            </button>
+                <div>
+                    <ul id="menuPopup">
+                        <li data-menu="fragrance">FRAGRANCE</li>
+                        <li data-menu="beauty">BEAUTY</li>
+                        <li data-menu="accessories">ACCESSORIES</li>
+                        <li data-menu="life">LIFESTYLE &amp; DECOR</li>
+                        <li class="mui" data-menu="about">ABOUT ANNASUI</li>
+                        <li class="mui" data-menu="search">SEARCH</li>
+                        <li class="mui"><input type="button" value="account" class="openBtn" data-popup="accountPopup"></li>
+                        <li class="mui"><input type="button" value="cart" class="openBtn" data-popup="cartPopup"></li>
+                    </ul>
+                    <h1>
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="welcome to annasui">
+                        </a>
+                    </h1>
+                    <div class="sideBox">
+                        <ul>
+                            <li data-menu="about">ABOUT ANNASUI</li>
+                            <li data-menu="search">SEARCH</li>
+                        </ul>
+                        <input type="button" value="account" class="openBtn" data-popup="accountPopup">
+                        <input type="button" value="cart" class="openBtn" data-popup="cartPopup"><span>₩</span>
+                    </div>
+                </div>
+                <div>
+                    <input type="button" value="closeMenu" class="closeBtn">
+                    <ul id="fragrance" class="gnbPanel">
+                        <li><a href="list_fragrance.html">All Fragrance</a></li>
+                        <li><a href="detail_Fragrance_Mini_Set.html">New: Fragrance Mini Set</a></li>
+                        <li><a href="detail_Sundae_Pretty_Pink.html">NEW: Sundae Collection</a></li>
+                        <li><a href="detail_Fantasia_Pop.html">NEW: Fantasia Pop Surprise</a></li>
+                        <li><a href="detail_Cosmic_Sky.html">NEW: Cosmic Sky</a></li>
+                        <li><a href="detail_Anna_Sui_Classic.html">Anna Sui Classic</a></li>
+                        <li><a href="detail_Fantasia.html">Fantasia</a></li>
+                        <li><a href="detail_Fantasia_Mermaid.html">Fantasia Mermaid</a></li>
+                        <li><a href="detail_Flight_of_Fancy.html">Flight of Fancy</a></li>
+                        <li><a href="detail_La_Vie_De_Boheme.html">La Vie de Boheme</a></li>
+                        <li><a href="detail_Lucky_Wish.html">Lucky Wish</a></li>
+                        <li><a href="detail_Secret_Wish.html">Secret Wish</a></li>
+                        <li><a href="detail_Sky.html">Sky</a></li>
+                        <li><a href="detail_Sui_Dreams_Eau_de_Toilette.html">Sui Dreams</a></li>
+                        <li><a href="list_fragrance.html">View All</a></li>
+                    </ul>
+                    <ul id="beauty" class="gnbPanel">
+                        <li><a href="list_beauty1.html">All Cosmetics</a></li>
+                        <li><a href="newCosmetics1.html">New Cosmetics</a></li>
+                        <li><a href="cheeks.html">Cheeks</a></li>
+                        <li><a href="eyes.html">Eyes</a></li>
+                        <li><a href="face.html">Face</a></li>
+                        <li><a href="lips.html">Lips</a></li>
+                        <li><a href="nails.html">Nails</a></li>
+                        <li><a href="skincare.html">Skincare &amp; Hair</a></li>
+                        <li><a href="suiblack.html">Sui Black</a></li>
+                        <li><a href="beautyAccessories.html">Beauty Accessories</a></li>
+                        <li><a href="beautygift.html">Beauty Gift Sets</a></li>
+                        <li><a href="list_beauty1.html">View All</a></li>
+                    </ul>
+                    <ul id="accessories" class="gnbPanel">
+                        <li><a href="list_acc1.html">All Accessories</a></li>
+                        <li><a href="bags1.html">Bags &amp; Wallets</a></li>
+                        <li><a href="gloves.html">Gloves</a></li>
+                        <li><a href="hairAccessories.html">Hair Accessories</a></li>
+                        <li><a href="hats.html">Hats &amp; Scarves</a></li>
+                        <li><a href="jewelry.html">Jewelry</a></li>
+                        <li><a href="shoes.html">Shoes</a></li>
+                        <li><a href="socks.html">Socks &amp; Tights</a></li>
+                        <li><a href="sunglasses.html">Sunglasses</a></li>
+                        <li><a href="list_acc1.html">View All</a></li>
+                    </ul>
+                    <ul id="life" class="gnbPanel">
+                        <li><a href="list_life1.html">All Lifestyle/Decor</a></li>
+                        <li><a href="books.html">Books &amp; Stationery</a></li>
+                        <li><a href="handkerchiefs.html">Handkerchiefs</a></li>
+                        <li><a href="washcloths.html">Washcloths</a></li>
+                        <li><a href="vanityAccessories.html">Vanity Accessories</a></li>
+                        <li><a href="list_life1.html">View All</a></li>
+                    </ul>
+                    <ul id="about" class="gnbPanel">
+                        <li><a href="about.html">About Anna</a></li>
+                    </ul>
+                    <ul id="search" class="gnbPanel">
+                        <li>
+                            <h3>Looking for something?</h3>
+                            <input type="search" placeholder="Enter Your Search" title="insert your keywords">
+                            <div>
+                                <a href="fitting.html">FITTING &amp; SIZING</a>
+                                <a href="contact.html">CONTACT US</a>
+                                <a href="shipping.html">SHIPPING &amp; RETURNS</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    
+    
+        <div class="detailContainer">
+            <div>
+                <img src="images/detail_life09.png" alt="BUTTERFLY MEADOWS HANDKERCHIEF">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+                <div>
+                    <div>
+                        <small><strong>SHOP / LIFESTYLE &amp; DECOR /</strong> BUTTERFLY MEADOWS HANDKERCHIEF</small>
+                        <img src="images/li_life09.png" alt="BUTTERFLY MEADOWS HANDKERCHIEF">
+                        <span>
+                            <input type="radio" name="select_color" id="00_1">
+                            <label for="00_1">01</label>
+                            <input type="radio" name="select_color" id="00_2">
+                            <label for="00_2">07</label>
+                            <input type="radio" name="select_color" id="00_3">
+                            <label for="00_3">54</label>
+                        </span>
+                    </div>
+                    <div>
+                        <small>LIFESTYLE &amp; DECOR</small>
+                        <span>★★★★★ (2)</span>
+                        <h2>Butterfly Meadows Handkerchief</h2>
+                        <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                        <strong>₩28,000</strong>
+                        <span>line</span>
+                        <p>
+                            12 months interest-free payment
+                        </p>
+                        <img src="images/shoppay.png" alt="shoppay">
+                    </div>
+                    <div>
+                        <a href="#DESCRIPTION">DESCRIPTION</a>
+                        <a href="#DETAILS">DETAILS</a>
+                        <a href="#SIZEANDFIT">SIZE AND FIT</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div>
+                <p id="DESCRIPTION">
+                    Anna Sui's signature print Butterfly Meadow
+                    is now available in a handkerchief.
+                    Tie on your favorite handbag, 
+                    place in your hair or use as a scarf.
+                    Please note that this item is final sale and 
+                    cannot be returned or exchanged.
+                </p>
+                <strong>ANNA SUI CBE</strong>
+                <p id="DETAILS">
+                    100% Cotton <br>
+                    19.5" x 19.75" <br>
+                    Anna Sui's signature print <br>
+                    60-BLACK <br>
+                    62-NAVY <br>
+                    01-PINK
+                </p>
+            </div>
+    
+            <div id="SIZEANDFIT">
+                <div>
+                    <h2>SIZE AND FIT</h2>
+                    <span>O/S</span>
+                    <span>19.5" x 19.75"</span>
+                    <span>100% Cotton</span>
+                    <span>Tie on your favorite handbag</span>
+                    <span>Anna Sui's signature print</span>
+                </div>
+                <img src="images/detail_life009.png" alt="BUTTERFLY MEADOWS HANDKERCHIEF">
+            </div>
+    
+            <div>
+                <h2>ANNA SUI RECOMMENDS</h2>
+                <ul>
+                    <li>
+                        <a href="detail_Signature_Fragrance_Mini_Set.html"><img src="images/li_01.png" alt="Signature Fragrance Mini Set"></a>
+                        <div>
+                            <small>New: A FRAGRANCE</small>
+                            <h3>Signature Fragrance Mini Set</h3>
+                            <span>★★★★★ (2)</span>
+                        </div>
+                        <div>
+                            <strong>₩76,000</strong>
+                            <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="detail_Sundae_Pretty_Pink.html"><img src="images/li_02.png" alt="Sundae Pretty Pink Gift Set
+                            Eau de Toilette"></a>
+                        <div>
+                            <small>New: A FRAGRANCE</small>
+                            <h3>Sundae Pretty Pink Gift Set
+                                Eau de Toilette</h3>
+                            <span>★★★★★ (2)</span>
+                        </div>
+                        <div>
+                            <strong>₩106,000</strong>
+                            <span>
+                                <input type="radio" name="select_size" id="a_1">
+                                <label for="a_1">50ML</label>
+                            </span>
+                            <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="detail_Fantasia_Pop.html"><img src="images/li_03.png" alt="Fantasia Pop Surprise
+                            Eau de Toilette"></a>
+                        <div>
+                            <small>New: A FRAGRANCE</small>
+                            <h3>Fantasia Pop Surprise
+                                Eau de Toilette</h3>
+                            <span>★★★★★ (2)</span>
+                        </div>
+                        <div>
+                            <strong>₩106,000</strong>
+                            <span>
+                                <input type="radio" name="select_size" id="b_1">
+                                <label for="b_1">50ML</label>
+                            </span>
+                            <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+            <div>
+                <img src="images/FantasiaNotes1.webp" alt="fantasianotes perfume">
+                <div>
+                    <h3>15% Off Your First Order</h3>
+                    <p>Claim Your 15% OFF
+                        Join the World of Anna Sui 
+                        for this exclusive discount* on your first order.
+                        *exclusions apply
+                    </p>
+                    <span>OUR PRIVACY POLICY</span>
+                    <span>Policy<a href="privacy.html"> here.</a></span>
+                    <div>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="submit" value="CONTINUE">
+                    </div>
+                </div>
+            </div>
+        
+            <div>
+                <h2>#ANNASUI</h2>
+                <p>Please email us if you have any questions: asd@annasui.com</p>
+                <ul class="reviewCarousel">
+                    <li><img src="images/carousel_01.png" alt="sui-dreams"></li>
+                    <li><img src="images/carousel_02.png" alt="sky"></li>
+                    <li><img src="images/carousel_03.png" alt="ring-rouge"></li>
+                    <li><img src="images/carousel_04.png" alt="annasui-nail"></li>
+                    <li><img src="images/carousel_05.png" alt="annasui-acc"></li>
+                    <li><img src="images/carousel_06.png" alt="luckywish"></li>
+                    <li><img src="images/carousel_07.png" alt="annasui_mermaid"></li>
+                    <li><img src="images/carousel_08.png" alt="rosepowder"></li>
+                    <li><img src="images/carousel_09.png" alt="blacklip"></li>
+                    <li><img src="images/carousel_10.png" alt="pinkhet"></li>
+                </ul>
+            </div>
+        
+            <div>
+                <h2>More in this Collection</h2>
+                <ul class="collectionCarousel">
+                    <li>
+                        <a href="detail_Cat_Embroidery_Washcloth.html"><img src="images/li_life19.png" alt="Cat Embroidery Washcloth"></a>
+                        <div>
+                            <small>LIFESTYLE &amp; DECOR</small>
+                            <h3>Cat Embroidery Washcloth</h3>
+                            <span>★★★★★ (2)</span>
+                        </div>
+                        <div>
+                            <strong>₩21,000</strong>
+                            <span>
+                                <input type="radio" name="select_color" id="z_1">
+                                <label for="z_1">01</label>
+                                <input type="radio" name="select_color" id="z_2">
+                                <label for="z_2">10</label>
+                                <input type="radio" name="select_color" id="z_3">
+                                <label for="z_3">60</label>
+                            </span>
+                            <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="detail_Rose_Trellis_Washcloth.html"><img src="images/li_life20.png" alt="Rose Trellis Washcloth"></a>
+                        <div>
+                            <small>LIFESTYLE &amp; DECOR</small>
+                            <h3>Rose Trellis Washcloth</h3>
+                            <span>★★★★★ (2)</span>
+                        </div>
+                        <div>
+                            <strong>₩21,000</strong>
+                            <span>
+                                <input type="radio" name="select_color" id="aa_1">
+                                <label for="aa_1">08</label>
+                                <input type="radio" name="select_color" id="aa_2">
+                                <label for="aa_2">02</label>
+                                <input type="radio" name="select_color" id="aa_3">
+                                <label for="aa_3">60</label>
+                            </span>
+                            <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="detail_Nail_Polish_Collection_Washcloth.html"><img src="images/li_life21.png" alt="Nail Polish Collection Washcloth"></a>
+                        <div>
+                            <small>LIFESTYLE &amp; DECOR</small>
+                            <h3>Nail Polish Collection Washcloth</h3>
+                            <span>★★★★★ (2)</span>
+                        </div>
+                        <div>
+                            <strong>₩21,000</strong>
+                            <span>
+                                <input type="radio" name="select_color" id="c_1">
+                                <label for="c_1">01</label>
+                                <input type="radio" name="select_color" id="c_2">
+                                <label for="c_2">28</label>
+                                <input type="radio" name="select_color" id="c_3">
+                                <label for="c_3">10</label>
+                            </span>
+                            <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="detail_ANNA_SUI_Written_by_Andrew_Bolton.html"><img src="images/li_life34.png" alt="ANNA SUI Written by Andrew Bolton"></a>
+                        <div>
+                            <small>LIFESTYLE &amp; DECOR</small>
+                            <h3>"ANNA SUI" Written by Andrew Bolton</h3>
+                            <span>★★★★★ (2)</span>
+                        </div>
+                        <div>
+                            <strong>₩81,000</strong>
+                            <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="detail_Vanity_Face_Brush.html"> <img src="images/li_life35.png" alt="Vanity Face Brush"></a>
+                        <div>
+                            <small>LIFESTYLE &amp; DECOR</small>
+                            <h3>Vanity Face Brush</h3>
+                            <span>★★★★★ (4)</span>
+                        </div>
+                        <div>
+                            <strong>₩43,000</strong>
+                            <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="detail_Sui_Black_Stand_Mirror.html"><img src="images/li_life36.png" alt="Sui Black Stand Mirror"></a>
+                        <div>
+                            <small>LIFESTYLE &amp; DECOR</small>
+                            <h3>Sui Black Stand Mirror</h3>
+                            <span>★★★★★ (2)</span>
+                        </div>
+                        <div>
+                            <strong>₩41,000</strong>
+                            <input type="button" value="Add to Bag" data-popup="cartPopup" class="openBtn">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+    
+    
+            <div>
+                <div>
+                    <strong>SHIPPING INFORMATION</strong>
+                    <p>Please see our <a href="shpping.html">shipping information</a> for more details</p>
+                </div>
+                <div>
+                    <strong>CONTACT US</strong>
+                    <p>For questions related to online orders, email us at: <a href="mailto:contactus@annasui.com">asd@annasui.com</a><br> 
+                        or <a href="mailto:contactus@annasui.com">contactus@annasui.com</a> 
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    
+        <footer>
+            <div>
+                <div>
+                    <h2>★ JOIN OUR MAILING LIST ★</h2>
+                    <input type="email" placeholder="15% Off Your First Order" required>
+                    <input type="submit" value="JOIN">
+                </div>
+                <div>
+                    <h2 class="active">EXPLORE</h2>
+                    <ul>
+                        <!-- list order 변경 -->
+                        <li><a href="about.html">ABOUT ANNA SUI</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="shipping.html">SHIPPING &amp; RETURNS</a></li>
+                        <li><a href="store.html">STORE LOCATIONS</a></li>
+                        <li><a href="fitting.html">FITTING &amp; SIZING</a></li>
+                        <li><a href="https://annasui.co.jp/">JAPANESE WEBSITE</a></li>
+                        <li><a href="terms.html">TERMS OF SERVICE</a></li>
+                        <li><a href="privacy.html">PRIVACY POLICY</a></li>
+                        <li><a href="statement.html">ACCESSIBILITY STATEMENT</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="mailto:contactus@annasui.com">asd@annasui.com</a>
+                    <ul>
+                        <li><a href="https://www.facebook.com/annasuipage/">facebook</a></li>
+                        <li><a href="https://www.instagram.com/annasui/">instargram</a></li>
+                        <li><a href="https://twitter.com/annasui">tiwtter</a></li>
+                        <li><a href="https://www.pinterest.co.kr/worldofannasui/">pin</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCTHD_8igkZNtgjN9F2ODgdg">youtube</a></li>
+                        <li><a href="https://m.weibo.cn/u/6900750444?luicode=10000011&lfid=231522type%3D1%26t%3D10%26q%3D%23ANNA%20SUI%23">weibo</a></li>
+                    </ul>
+                    <p>COPYRIGHT © ANNA SUI DOWNTOWN</p>
+                </div>
+                <div>
+                    <a href="about.html">© ANNA SUI
+                        DOWNTOWN</a>
+                    <a href="privacy.html">PRIVACY 
+                        POLICY</a>
+                    <a href="terms.html">TERMS OF 
+                        SERVICE</a>
+                    <button>South Korea (KRW  ₩)</button>
+                    <!-- button tag -->
+                    <!-- <img src="images/us.svg" alt="us">
+                    <p>UNITED STATE OF AMERICA (USD)</p> -->
+                    <!-- 위내용수정대로 -->
+                    <span>
+                        <img src="images/us.svg" alt="us">
+                        <u>UNITED STATE OF AMERICA (USD)</u>
+                    </span>
+                </div>
+            </div>
+            <div class="top_button">
+                <a href="#">arrow</a>
+            </div>
+        </footer>
+    </body>
+</html>

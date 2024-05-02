@@ -1,0 +1,1933 @@
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+
+
+                                                                                                                                                  
+[id$='Popup'],                                                                                                                                     
+[class$='Panel']{
+    display: none;
+}
+                                                                                                                                                  
+[id$='Popup'].active,                                                                                                                                     
+[class$='Panel'].active{
+    display: block;
+}
+
+@media screen and (max-width: 767px){
+    .mui{
+        display: block;
+    }
+    .sideBox{
+        display: none;
+    }
+    header{
+        font-family: 'Sen'; background-color: #9384d1; 
+        position: fixed; width: 100%;
+        z-index: 10;
+    }
+    header > div,
+    header > nav > div:first-of-type{
+        padding: 5px 4.16%; box-sizing: border-box;
+        position: relative;
+    }   
+    header > div span{
+        display: none;
+        /* width: 30%;
+        position: absolute; top: 30%; left: 0; */
+    }
+    /* header > div span img{
+        width: 100%; max-width: 30px; vertical-align: middle;
+    }
+    header > div span u{
+        font-size: 10px; font-weight: 400; padding-left: 5px;
+    } */
+    header > div p{
+        font-size: 10px; font-weight: 400; color: #b5b5b5;
+        text-align: center; margin: 0 auto;
+    }
+    header > div p:hover{
+        color: black;
+    }
+    header > div input[type='button']{
+        display: none;
+        /* border: none; background-color: transparent;
+        font-size: 10px; font-weight: 400;
+        position: absolute; right: 0; top: 35%; */
+        
+    } 
+
+
+    header > nav{
+        font-family:'Sen'; position: relative;
+    }
+    header > nav > button{
+        display: block;
+        position: absolute; left: 2%; top: 15%;
+        z-index: 1;
+        border: none;
+        background-color: transparent;
+    }
+    /* header > nav > button.material-symbols-outlined:hover{
+        background: url('../images/close.svg') center / cover no-repeat;
+        width: 18px; height: 12px;
+    } */
+    header > nav > div:first-of-type{
+        background-color: white; 
+    }
+    header > nav > div:first-of-type > ul{
+        position: fixed; left: 0; top: 55px; box-sizing: border-box; background-color: white;
+        width: 100%; display: block; height: calc(100% - 55px);
+        padding: 10px 25px; display: none;
+    }
+    header > nav > div:first-of-type.active > ul{
+        display: block;
+    }
+    header > nav > div:first-of-type > ul li{
+        color: black; font-size: 10px; font-weight: 700;
+        display: block; 
+        /* padding: 40px 0; */
+    }
+    header > nav > div:first-of-type > ul li:hover{
+        color: #b5b5b5;
+    }
+    header > nav > div:first-of-type > ul li:not(:last-child){
+        /* margin-left: 10%; */
+        margin-bottom: 30px;
+    }
+    header > nav > div:first-of-type > ul li input[type='button']{
+        border: none; background-color: transparent;
+        font-size: 10px; font-weight: 700; text-transform: uppercase;
+        font-family: "Sen"; display: block;
+        padding: 0;
+    }
+    header > nav > div:first-of-type h1{
+        max-width: 50px; margin: 0 auto;
+        /* width: 10%; */
+    }
+    header > nav > div:first-of-type h1 a{
+        display: block; 
+    }
+    header > nav > div:first-of-type h1 a img{
+        width: 100%;
+    }
+    /* header > nav > div:first-of-type div span{
+        font-size: 15px; font-weight: 900;
+    }
+     */
+
+    header > nav div:nth-of-type(2) ul{
+        display: none; padding: 0 25px; position: absolute;
+        background-color: white; font-family: 'Sen'; width: 100%; top: 55px;
+    }
+    header > nav div:nth-of-type(2){
+        position: relative; height: 0;
+    }
+    header > nav div:nth-of-type(2).active{
+        height: 850px; position: absolute; width: 100%;
+    }
+    header > nav div:nth-of-type(2) ul.active{
+        display: block; z-index: 10;
+    }
+    header > nav > div:nth-of-type(2) > .closeBtn{
+        display: none; z-index: 100; position: absolute; right: 5%; top: 0; 
+        border: none; background-color: transparent; background: url('../images/close.svg') left top / cover no-repeat;
+        width: 21px; height: 23px; text-indent: -9999px;
+    }
+    /* header > nav > div:nth-of-type(2).active > .closeBtn{
+        display: block;
+    } */
+    header > nav > div:nth-of-type(2) .gnbPanel{
+        top: 0; height: 100%; left: 0;
+    }
+    header > nav #fragrance li{
+        display: block;
+    }
+    header > nav #fragrance li a{
+        display: block; font-size: 10px; font-weight: 400;
+        color: black;
+    }
+    header > nav #fragrance li a:hover{
+        color: #b5b5b5;
+    }
+    header > nav #fragrance li:not(:nth-child(14),:last-child) a{
+        /* margin-bottom: 23px; */
+        margin-bottom: 20px;
+    }
+    header > nav #fragrance li:nth-child(14) a{
+        /* margin-bottom: 80px; */
+        margin-bottom: 60px;
+    }
+    header > nav #beauty li{
+        display: block;
+    }
+    header > nav #beauty li a{ 
+        display: block; font-size: 10px;
+        /* font-size: 20px;  */
+        font-weight: 400; color: black;
+    }
+    header > nav #beauty li a:hover{
+        color: #b5b5b5;
+    }
+    header > nav #beauty li:not(:nth-child(11),:last-child) a{
+        margin-bottom: 20px;
+    }
+    header > nav #beauty li:nth-child(11) a{
+        margin-bottom: 60px;
+    }
+    header > nav #accessories li{
+        display: block;
+    }
+    header > nav #accessories li a{
+        display: block; font-size: 10px; font-weight: 400;
+        color: black;
+    }
+    header > nav #accessories li a:hover{
+        color: #b5b5b5;
+    }
+    header > nav #accessories li:not(:nth-child(9),:last-child) a{
+        margin-bottom: 20px;
+    }
+    header > nav #accessories li:nth-child(9) a{
+        margin-bottom: 60px;
+    }
+    header > nav #life li{
+        display: block;
+    }
+    header > nav #life li a{
+        display: block; font-size: 10px; font-weight: 400;
+        color: black;
+    }
+    header > nav #life li a:hover{
+        color: #b5b5b5;
+    }
+    header > nav #life li:not(:nth-child(5),:last-child) a{
+        margin-bottom: 20px;
+    }
+    header > nav #life li:nth-child(5) a{
+        margin-bottom: 60px;
+    }
+    header > nav #about li{
+        display: block;
+    }
+    header > nav #about li a{
+        display: block; font-size: 10px; font-weight: 400;
+        color: black;
+    }
+    header > nav #about li a:hover{
+        color: #b5b5b5;
+    }
+
+
+    header > nav #search h3{
+        /* font-size: 30px;  */
+        /* margin-bottom: 75px; */
+        /* line-height: 40px; */
+        font-size: 15px; line-height: 20px;
+        margin-bottom: 40px; font-weight: 400; 
+    }
+    header > nav #search input[type='search']{
+        font-size: 10px; font-weight: 400; font-family: 'Sen';
+        padding-left: 20px;
+        background: url('../images/search.svg') left top / contain no-repeat;
+        border: none;
+        border-bottom: 2px solid #b5b5b5;
+        margin-bottom: 200px;
+    }
+    header > nav #search input[type='search']::placeholder{
+        color: #b5b5b5; font-size: 10px; font-weight: 400;
+    }
+    header > nav #search div a{
+        display: block; font-size: 10px; font-weight: 400; color: black;
+        margin-bottom: 25px;
+    }
+
+
+    #newsPopup{
+        display: none;
+    }
+    /* #newsPopup{
+        background-color: white; 
+        padding: 55px 25px 30px;
+        position: fixed; font-family:'Sen'; 
+        max-width: 280px; width: 100%;
+        right: 0; top: 0; z-index: 100;
+    }
+    #newsPopup small{
+        font-size: 10px; font-weight: 400; font-family: 'Sen';
+        position: absolute; right: 5%; top: 5%;
+    }
+    #newsPopup div:first-of-type{
+       width: 50%;
+       width: 100%;
+    }
+    #newsPopup div:first-of-type h2{
+        margin-bottom: 15px;
+    }
+    #newsPopup div:first-of-type h2 img{
+        width: 100%; max-width: 55px; display: block;
+    }
+    #newsPopup div:first-of-type p{
+        font-size: 10px; font-weight: 400;
+        line-height: 15px; max-width: 125px;
+        margin-bottom: 60px;
+    }
+    #newsPopup div:first-of-type p strong{
+        font-size: 10px; font-weight: 700; display: block;
+        margin-bottom: 15px;
+    }
+    #newsPopup > img{
+        max-width: 100px; 
+        margin-left: 60%;
+        max-width: 100px;
+        position: absolute; right: 5%;
+        top: 25%;
+    }
+    #newsPopup div:last-of-type{
+        clear: both;
+        border-bottom: 1px solid #b5b5b5;
+    }
+    #newsPopup div:last-of-type input[type='email']{
+        font-size: 10px; font-weight: 400; font-family: 'Sen';
+        border: none; 
+        margin-right: 50px;
+        margin-right: 100px; 
+        padding: 5px;
+    }
+    #newsPopup div:last-of-type input[type='email']::placeholder{
+        font-size: 10px; font-weight: 400; color: #b5b5b5; font-family: 'Sen';
+    }
+    #newsPopup div:last-of-type input[type='submit']{
+        font-size: 10px; font-weight: 400; border: none; background-color: transparent;
+        font-family: 'Sen'; padding-right: 40px;
+        background: url(../images/arrow_forward_FILL0_wght400_GRAD0_opsz24.svg) right top / contain no-repeat;
+    }
+    #newsPopup > input[type='button']{
+        background: url('../images/close.svg') left top / cover no-repeat transparent;
+        width: 21px; height: 23px; border: none; text-indent: -9999px; 
+        position: absolute; right: 5%; top: 15%;
+    } */
+
+    
+
+    #accountPopup{
+        position: fixed; left: 0; top: 55px;
+        font-family: 'Sen'; padding: 30px 10px;
+        width: 100%; display: none; background-color: #ffffff;
+        height: 100%; 
+    }
+    #accountPopup.active{
+        display: block; z-index: 100;
+    }
+    #accountPopup h2{
+        font-size: 15px; font-weight: 400; margin-bottom: 40px;
+    }
+    #accountPopup form{
+        max-width: 260px;
+    }
+    #accountPopup input[type='email']{
+        border: none; font-size: 10px; font-weight: 400; font-family: 'Sen';
+        border-bottom: 1px solid #b5b5b5; display: block; margin-bottom: 40px;
+        width: 100%; padding: 5px; box-sizing: border-box;
+    }
+    #accountPopup input[type='email']::placeholder{
+        color: #b5b5b5;
+    }
+    #accountPopup input[type='password']{
+        border: none; font-size: 10px; font-weight: 400; font-family: 'Sen';
+        border-bottom: 1px solid #b5b5b5; display: block; margin-bottom: 25px;
+        width: 100%; padding: 5px; box-sizing: border-box;
+    }
+    #accountPopup input[type='password']::placeholder{
+        color: #b5b5b5;
+    }
+    #accountPopup > form div:first-of-type{
+        text-align: right; margin-bottom: 30px; display: block;
+    }
+    #accountPopup > form div:first-of-type a{
+        font-size: 10px; font-weight: 400; color: black;
+        text-decoration: underline;
+    }
+    #accountPopup > form div:first-of-type a:hover{
+        text-decoration: none;
+    }
+    #accountPopup div:last-of-type a:first-of-type{
+        padding: 15px 40px; background-color: black; color: #b5b5b5;
+        border: none; font-size: 10px; font-weight: 400; font-family: 'Sen';
+        display: inline-block;
+    }
+    #accountPopup div:last-of-type a:first-of-type:hover{
+        background-color: #b5b5b5; color: black;
+    }
+    #accountPopup div:last-of-type a:last-of-type{
+        padding: 15px 13.5px; background-color: black; color: white;
+        margin-left: 10px; font-size: 10px; font-weight: 400;
+        display: inline-block;
+    }
+    #accountPopup div:last-of-type a:last-of-type:hover{
+        background-color: #b5b5b5; color: black;
+    }
+    #accountPopup > input[type='button']:last-of-type{
+        /* background: url('../images/close.svg') left top / cover no-repeat transparent;
+        width: 21px; height: 23px; border: none; text-indent: -9999px; 
+        position: absolute; right: 13%; top: 0; */
+        display: none;
+    }
+
+
+    #cartPopup{
+        padding: 30px 10px;
+        width: 100%; height: 100%;
+        background-color: white; position: fixed; 
+        left: 0; top: 55px; font-family: 'Sen'; display: none;
+    }
+    #cartPopup > input[type='button']{
+        /* background: url('../images/close.svg') left top / cover no-repeat transparent;
+        width: 21px; height: 23px; border: none; text-indent: -9999px; 
+        position: absolute; right: 11%; top: 0; */
+        display: none;
+    }
+    #cartPopup [id$='Box']{
+        display: none;
+    }
+    #cartPopup [id$='Box'].active{
+        display: block;
+    }
+    #cartPopup.active{
+        display: block; z-index: 100;
+    }
+    #cartPopup div{
+        max-width: 260px;
+    }
+    #cartPopup > div:first-of-type h2{
+        font-size: 15px; font-weight: 400; margin-bottom: 25px;
+    }
+    #cartPopup > div:first-of-type a{
+        display: block; background-color: #efefef;
+        padding: 10px 30px; font-size: 10px; font-weight: 400; font-family: 'Sen';
+        color: black; width: 30%; text-align: center;
+    }
+    #cartPopup > div:first-of-type a:hover{
+        background-color: black; color: white;
+    }
+    #cartPopup div:last-of-type > div{
+        position: relative; margin-bottom: 100px;
+    }
+    #cartPopup div:last-of-type div h2{
+        font-size: 15px; font-weight: 400;
+        border-bottom: 2px solid #b5b5b5; padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    #cartPopup div:last-of-type div h2 small{
+        font-size: 10px; font-weight: 400;
+        position: absolute; right: 0; top: 0;
+    }
+    #cartPopup div:last-of-type > div h3{
+        font-size: 10px; font-weight: 400;
+        border-bottom: 2px solid #9384d1;
+        padding-bottom: 10px; margin-bottom: 30px;
+    }
+    #cartPopup div:last-of-type > div h3 strong{
+        position: absolute; right: 0;
+        font-size: 10px; font-weight: 400;
+    }
+    #cartPopup div:last-of-type > div span{
+        position: absolute; right: 0;
+    }
+    #cartPopup div:last-of-type > div span a{
+        display: inline-block;
+    }
+    #cartPopup div:last-of-type > div span a:first-of-type{
+        background-color: transparent; text-decoration: underline;
+        color: black; font-size: 10px; font-weight: 400;
+    }
+    #cartPopup div:last-of-type > div span a:first-of-type:hover{
+        text-decoration: none;
+    }
+    #cartPopup div:last-of-type > div span a:last-of-type{
+        background-color: black; color: white;
+        font-size: 10px; font-weight: 400; padding: 10px 45px;
+        margin-left: 10px;
+    }
+    #cartPopup div:last-of-type > div span a:last-of-type:hover{
+        background-color: #efefef; color: black;
+    }
+
+    #cartPopup div:last-of-type ul::after{
+        content: ''; display: block; clear: both;
+    }
+    #cartPopup div:last-of-type ul li{
+        float: right; padding: 20px;
+    }
+    #cartPopup div:last-of-type ul li:hover{
+        border: 1px solid black;
+    }
+    #cartPopup div:last-of-type ul li img{
+        max-width: 150px; width: 100%;
+    }
+    #cartPopup div:last-of-type ul li div:first-of-type{
+        margin-bottom: 10px;
+    }
+    #cartPopup div:last-of-type ul li div:first-of-type small{
+        font-size: 10px; font-weight: 400; margin-bottom: 10px;
+        display: block;
+    }
+    #cartPopup div:last-of-type ul li div:first-of-type h3{
+        font-size: 10px; font-weight: 700; margin-bottom: 10px;
+    }
+    #cartPopup div:last-of-type ul li div:first-of-type span{
+        font-size: 10px; font-weight: 400; margin-bottom: 10px;
+    }
+    #cartPopup div:last-of-type ul li div:first-of-type span strong{
+        font-size: 10px; font-weight: 700;
+    }
+    #cartPopup div:last-of-type ul li div:last-of-type{
+        position: relative;
+    }
+    #cartPopup div:last-of-type ul li div:last-of-type span button{
+        font-size: 10px; font-weight: 400;
+        border: none; background-color: #efefef;
+        width: 22px; height: 22px; border-radius: 11px;
+    }
+    #cartPopup div:last-of-type ul li div:last-of-type span strong{
+        font-size: 10px; font-weight: 400;
+    }
+    #cartPopup div:last-of-type ul li div:last-of-type input{
+        position: absolute; right: 0; bottom: 0;
+        border: none; background-color: transparent;
+        text-decoration: underline; font-size: 10px; font-weight: 400;
+        font-family: 'Sen';
+    }
+    #cartPopup div:last-of-type ul li div:last-of-type input:hover{
+        text-decoration: none;
+    }
+
+    #infoPopup{
+        background-color: white;
+        padding: 30px 5px; width: 100%;
+        position: fixed; 
+        /* max-width: 350px;  */
+        font-family:'Sen';
+        left: 0; top: 10%; z-index: 100;
+        box-shadow: 2px 2px 2px #b5b5b5;
+    }
+    #infoPopup div h3{
+        font-size: 10px; font-weight: 700; margin-bottom: 20px;
+    }
+    #infoPopup div p{
+        font-size: 10px; font-weight: 400; line-height: 15px;
+        max-width: 250px; margin-bottom: 30px;
+    }
+    #infoPopup div a:first-of-type{
+        font-size: 10px; font-weight: 400; color: white;
+        background-color: black; display: block; text-align: center;
+        width: 155px; padding: 10px 25px;
+        margin: 0 auto 30px;
+    } 
+    #infoPopup div a:last-of-type{
+        display: block; color: black; text-align: center;
+        font-size: 10px; font-weight: 400; text-decoration: underline;
+    }
+    #infoPopup div a:last-of-type:hover{
+        text-decoration: none;
+    }
+    #infoPopup > input[type='button']{
+        background: url('../images/close.svg') left top / cover no-repeat transparent;
+        width: 20px; height: 20px; border: none; text-indent: -9999px; 
+        position: absolute; right: 5%; top: 5%;
+    }
+
+
+    footer{
+        background-color: #9384d1; padding: 55px 2%;
+        font-family: 'Sen';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    }
+    /* footer > div::after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div div:not(:nth-of-type(3),:nth-of-type(4)){
+        float: left; width: 45%; 
+    } */
+    footer > div{
+        max-width: 260px; margin: 0 auto;
+    }
+    footer > div div:first-of-type{
+        /* margin-left: 0;  */
+        border-bottom: 2px solid #b5b5b5;
+        margin-bottom: 25px;
+        /* width: 320px; */
+    }
+    footer > div div h2{
+        font-size: 10px; font-weight: 700; 
+        color: black;
+    }
+    footer > div div:first-of-type h2{
+        margin-bottom: 35px;
+    }
+    footer > div div:first-of-type input[type='email']{
+        border: none; background-color: transparent;
+        font-size: 10px; font-weight: 400; font-family: 'Sen';
+        width: 200px;
+    }
+    footer > div div:first-of-type input[type='email']::placeholder{
+        color: black; font-size: 10px; font-weight: 400; font-family: 'Sen';
+    }
+    footer > div div:first-of-type input[type='submit']{
+        font-size: 10px; font-weight: 400; border: none; background-color: transparent;
+        font-family: 'Sen'; background: url('../images/arrow_forward_FILL0_wght400_GRAD0_opsz24.svg') right top / contain no-repeat;
+        padding-right: 20px;
+    }
+    footer > div div:nth-of-type(2){
+        /* margin-left: 10%; */
+        margin-bottom: 30px;
+    }
+    footer > div div:nth-of-type(2) h2{
+        font-size: 10px; font-weight: 700;
+        background: url('../images/expand_more_FILL0_wght300_GRAD0_opsz24.svg') right top / contain no-repeat;
+        background-size: 15px;
+        margin-bottom: 30px; 
+    }
+    footer > div div:nth-of-type(2) ul{
+        display: none;
+    }
+    footer > div div:nth-of-type(2) h2.active{
+        background: url('../images/expand_less_FILL0_wght300_GRAD0_opsz24.svg') right top / contain no-repeat;
+        background-size: 15px;
+    }
+    footer > div div:nth-of-type(2) h2.active + ul{
+        display: block;
+    }
+    /* footer > div div:nth-of-type(2) ul li{
+        float: left; width: 50%; 
+    } */
+    footer > div div:nth-of-type(2) ul li a{
+        display: block; font-size: 10px; font-weight: 400;
+        color: black; margin-bottom: 20px;
+    }
+    footer > div div:nth-of-type(2) ul li a:hover{
+        color: #b5b5b5;
+    }
+    footer > div div:nth-of-type(3){
+        margin-bottom: 30px;
+        clear: both;
+        /* margin-left: 2% */
+    }
+    footer > div div:nth-of-type(3) > a{
+        display: none;
+        /* font-size: 10px; color: black; font-weight: 400; margin-bottom: 40px;
+        display: block; text-decoration: underline; */
+    }
+    /* footer > div div:nth-of-type(3) > a:hover{
+        text-decoration: none;
+    } */
+    footer > div div:nth-of-type(3) ul li{
+        display: inline-block;
+    }
+    footer > div div:nth-of-type(3) ul li:not(:first-child){
+        margin-left: 10px;
+    }
+    footer > div div:nth-of-type(3) ul li a{
+        display: inline-block; text-indent: -9999px;
+        width: 28px; line-height: 25px; background-repeat: no-repeat;
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(1) a{background-image: url('../images/ico_01.svg');}
+    footer > div div:nth-of-type(3) ul li:nth-child(2) a{background-image: url('../images/ico_02.svg');}
+    footer > div div:nth-of-type(3) ul li:nth-child(3) a{background-image: url('../images/ico_03.svg');}
+    footer > div div:nth-of-type(3) ul li:nth-child(4) a{background-image: url('../images/ico_04.svg');}
+    footer > div div:nth-of-type(3) ul li:nth-child(5) a{background-image: url('../images/ico_05.svg');}
+    footer > div div:nth-of-type(3) ul li:nth-child(6) a{background-image: url('../images/ico_06.svg');}
+    footer > div div:nth-of-type(3) p{
+        display: none;
+        /* font-size: 10px; font-weight: 700; margin-bottom: 30px; */
+    }
+    footer > div div:last-of-type{
+        clear: both; position: relative;
+    }
+    footer > div div:last-of-type a{
+        display: inline-block; font-size: 10px; font-weight: 700;
+        max-width: 65px; color: black;
+    }
+    footer > div div:last-of-type a:not(:first-child){
+        margin-left: 20px;
+    }
+    footer > div div:last-of-type button{
+        display: none;
+        /* border: none; background-color: white; padding: 5px 20px;
+        position: absolute; left: 40%; */
+    }
+    footer > div div:last-of-type span{
+        display: none;
+        /* position: absolute; right: 0; */
+    }
+    /* footer > div div:last-of-type span img{
+        width: 100%; max-width: 30px; vertical-align: middle;
+    }
+    footer > div div:last-of-type span u{
+        font-size: 10px; font-weight: 400;
+    } */
+    footer > div:last-of-type{
+        position: fixed; right: 1.5%; bottom: 5%;
+    }
+    footer > div:last-of-type a{
+        display: block; z-index: 100;
+        background: url('../images/top_button.png') left top / cover no-repeat;
+        text-indent: -9999px; width: 30px; height: 30px;
+        filter: drop-shadow(1px 2px 4px #b5b5b5);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    .mui{
+        display: block;
+    }
+    .sideBox{
+        display: none;
+    }
+    header{
+        font-family: 'Sen'; background-color: #9384d1; 
+        position: fixed; width: 100%;
+        z-index: 10;
+    }
+    header > div,
+    header > nav > div:first-of-type{
+        padding: 15px 4.16%; box-sizing: border-box;
+        position: relative;
+    }   
+    header > div span{
+        width: 30%;
+        /* width: 15%;  */
+        position: absolute; top: 30%; left: 0;
+    }
+    header > div span img{
+        width: 100%; max-width: 30px; vertical-align: middle;
+    }
+    header > div span u{
+        font-size: 10px; font-weight: 400; padding-left: 5px;
+    }
+    header > div p{
+        font-size: 15px; font-weight: 400; color: #b5b5b5;
+        text-align: center;
+    }
+    header > div p:hover{
+        color: black;
+    }
+    header > div input[type='button']{
+        border: none; background-color: transparent;
+        font-size: 10px; font-weight: 400;
+        position: absolute; right: 0; top: 35%;
+        
+    } 
+
+
+    header > nav{
+        font-family:'Sen'; position: relative;
+    }
+    header > nav > button{
+        display: block;
+        position: absolute; left: 2%; top: 35%;
+        z-index: 1; 
+        border: none;
+        background-color: transparent;
+    }
+    /* header > nav > button.material-symbols-outlined:hover{
+        background: url('../images/close.svg') center / cover no-repeat;
+        width: 18px; height: 12px;
+    } */
+    header > nav > div:first-of-type{
+        background-color: white; 
+    }
+    header > nav > div:first-of-type > ul{
+        position: fixed; left: 0; top: 135px; box-sizing: border-box; background-color: white;
+        width: 50%; display: block; height: calc(100% - 135px);
+        padding: 10px 25px; display: none;
+    }
+    header > nav > div:first-of-type.active > ul{
+        display: block;
+    }
+    header > nav > div:first-of-type > ul li{
+        color: black; font-size: 10px; font-weight: 700;
+        display: block; 
+        /* padding: 40px 0; */
+    }
+    header > nav > div:first-of-type > ul li:hover{
+        color: #b5b5b5;
+    }
+    header > nav > div:first-of-type > ul li:not(:last-child){
+        /* margin-left: 10%; */
+        margin-bottom: 30px;
+    }
+    header > nav > div:first-of-type > ul li input[type='button']{
+        border: none; background-color: transparent;
+        font-size: 10px; font-weight: 700; text-transform: uppercase;
+        font-family: "Sen"; display: block;
+        padding: 0;
+    }
+    header > nav > div:first-of-type h1{
+        max-width: 115px; margin: 0 auto;
+        /* width: 10%; */
+    }
+    header > nav > div:first-of-type h1 a{
+        display: block; 
+    }
+    header > nav > div:first-of-type h1 a img{
+        width: 100%;
+    }
+    /* header > nav > div:first-of-type div span{
+        font-size: 15px; font-weight: 900;
+    }
+     */
+
+    header > nav div:nth-of-type(2) ul{
+        display: none; padding: 0 25px; position: absolute;
+        background-color: white; font-family: 'Sen'; width: 50%; top: 150px;
+    }
+    header > nav div:nth-of-type(2){
+        position: relative; height: 0;
+    }
+    header > nav div:nth-of-type(2).active{
+        height: 850px; position: absolute; width: 40%;
+    }
+    header > nav div:nth-of-type(2) ul.active{
+        display: block; z-index: 10;
+    }
+    header > nav > div:nth-of-type(2) > .closeBtn{
+        display: none; z-index: 100; position: absolute; right: 0; top: 0; 
+        border: none; background-color: transparent; background: url('../images/close.svg') left top / cover no-repeat;
+        width: 21px; height: 23px; text-indent: -9999px;
+    }
+    /* header > nav > div:nth-of-type(2).active > .closeBtn{
+        display: block;
+    } */
+    header > nav > div:nth-of-type(2) .gnbPanel{
+        top: 0; height: 100%; left: 0;
+    }
+    header > nav #fragrance li{
+        display: block;
+    }
+    header > nav #fragrance li a{
+        display: block; font-size: 10px; font-weight: 400;
+        color: black;
+    }
+    header > nav #fragrance li a:hover{
+        color: #b5b5b5;
+    }
+    header > nav #fragrance li:not(:nth-child(14),:last-child) a{
+        /* margin-bottom: 23px; */
+        margin-bottom: 20px;
+    }
+    header > nav #fragrance li:nth-child(14) a{
+        /* margin-bottom: 80px; */
+        margin-bottom: 60px;
+    }
+    header > nav #beauty li{
+        display: block;
+    }
+    header > nav #beauty li a{ 
+        display: block; font-size: 10px;
+        /* font-size: 20px;  */
+        font-weight: 400; color: black;
+    }
+    header > nav #beauty li a:hover{
+        color: #b5b5b5;
+    }
+    header > nav #beauty li:not(:nth-child(11),:last-child) a{
+        margin-bottom: 20px;
+    }
+    header > nav #beauty li:nth-child(11) a{
+        margin-bottom: 60px;
+    }
+    header > nav #accessories li{
+        display: block;
+    }
+    header > nav #accessories li a{
+        display: block; font-size: 10px; font-weight: 400;
+        color: black;
+    }
+    header > nav #accessories li a:hover{
+        color: #b5b5b5;
+    }
+    header > nav #accessories li:not(:nth-child(9),:last-child) a{
+        margin-bottom: 20px;
+    }
+    header > nav #accessories li:nth-child(9) a{
+        margin-bottom: 60px;
+    }
+    header > nav #life li{
+        display: block;
+    }
+    header > nav #life li a{
+        display: block; font-size: 10px; font-weight: 400;
+        color: black;
+    }
+    header > nav #life li a:hover{
+        color: #b5b5b5;
+    }
+    header > nav #life li:not(:nth-child(5),:last-child) a{
+        margin-bottom: 20px;
+    }
+    header > nav #life li:nth-child(5) a{
+        margin-bottom: 60px;
+    }
+    header > nav #about li{
+        display: block;
+    }
+    header > nav #about li a{
+        display: block; font-size: 10px; font-weight: 400;
+        color: black;
+    }
+    header > nav #about li a:hover{
+        color: #b5b5b5;
+    }
+
+
+    header > nav #search h3{
+        /* font-size: 30px;  */
+        /* margin-bottom: 75px; */
+        /* line-height: 40px; */
+        font-size: 15px; line-height: 20px;
+        margin-bottom: 40px; font-weight: 400; 
+    }
+    header > nav #search input[type='search']{
+        font-size: 10px; font-weight: 400; font-family: 'Sen';
+        padding-left: 20px;
+        background: url('../images/search.svg') left top / contain no-repeat;
+        border: none;
+        border-bottom: 2px solid #b5b5b5;
+        margin-bottom: 200px;
+    }
+    header > nav #search input[type='search']::placeholder{
+        color: #b5b5b5; font-size: 10px; font-weight: 400;
+    }
+    header > nav #search div a{
+        display: block; font-size: 10px; font-weight: 400; color: black;
+        margin-bottom: 25px;
+    }
+
+
+
+    #newsPopup{
+        background-color: white; 
+        padding: 105px 50px 30px;
+        position: fixed; max-width: 445px; font-family:'Sen';
+        width: 50%; right: 0; top: 0; z-index: 100;
+    }
+    #newsPopup small{
+        font-size: 10px; font-weight: 400; font-family: 'Sen';
+        position: absolute; right: 5%; top: 5%;
+    }
+    #newsPopup div:first-of-type{
+       /* width: 50%; */
+       width: 100%;
+    }
+    #newsPopup div:first-of-type h2{
+        margin-bottom: 30px;
+    }
+    #newsPopup div:first-of-type h2 img{
+        width: 100%; max-width: 135px; display: block;
+    }
+    #newsPopup div:first-of-type p{
+        font-size: 15px; font-weight: 400;
+        line-height: 25px; max-width: 224px;
+        margin-bottom: 10px;
+    }
+    #newsPopup div:first-of-type p strong{
+        font-size: 15px; font-weight: 700; display: block;
+        margin-bottom: 25px;
+    }
+    #newsPopup > img{
+        max-width: 150px; 
+        margin-left: 60%;
+        /* width: 100%; 
+        position: absolute; right: 5%;
+        top: 25%; */
+    }
+    #newsPopup div:last-of-type{
+        clear: both;
+        border-bottom: 1.5px solid #b5b5b5;
+    }
+    #newsPopup div:last-of-type input[type='email']{
+        font-size: 15px; font-weight: 400; font-family: 'Sen';
+        border: none; 
+        margin-right: 10px;
+        /* margin-right: 100px;  */
+        padding: 10px;
+    }
+    #newsPopup div:last-of-type input[type='email']::placeholder{
+        font-size: 15px; font-weight: 400; color: #b5b5b5; font-family: 'Sen';
+    }
+    #newsPopup div:last-of-type input[type='submit']{
+        font-size: 10px; font-weight: 400; border: none; background-color: transparent;
+        font-family: 'Sen'; padding-right: 40px;
+        background: url(../images/arrow_forward_FILL0_wght400_GRAD0_opsz24.svg) right top / contain no-repeat;
+    }
+    #newsPopup > input[type='button']{
+        background: url('../images/close.svg') left top / cover no-repeat transparent;
+        width: 21px; height: 23px; border: none; text-indent: -9999px; 
+        position: absolute; right: 5%; top: 15%;
+    }
+
+    
+
+    #accountPopup{
+        position: fixed; left: 0; top: 135px;
+        font-family: 'Sen'; padding: 35px 20px;
+        width: 50%; display: none; background-color: #ffffff;
+        height: 100%;
+    }
+    #accountPopup.active{
+        display: block; z-index: 100;
+    }
+    #accountPopup h2{
+        font-size: 20px; font-weight: 400; margin-bottom: 70px;
+    }
+    #accountPopup input[type='email']{
+        border: none; font-size: 15px; font-weight: 400; font-family: 'Sen';
+        border-bottom: 2px solid #b5b5b5; display: block; margin-bottom: 60px;
+        width: 100%; padding: 10px; box-sizing: border-box;
+    }
+    #accountPopup input[type='email']::placeholder{
+        color: #b5b5b5;
+    }
+    #accountPopup input[type='password']{
+        border: none; font-size: 15px; font-weight: 400; font-family: 'Sen';
+        border-bottom: 2px solid #b5b5b5; display: block; margin-bottom: 25px;
+        width: 100%; padding: 10px; box-sizing: border-box;
+    }
+    #accountPopup input[type='password']::placeholder{
+        color: #b5b5b5;
+    }
+    #accountPopup > form div:first-of-type{
+        text-align: right; margin-bottom: 60px; display: block;
+    }
+    #accountPopup > form div:first-of-type a{
+        font-size: 15px; font-weight: 400; color: black;
+        text-decoration: underline;
+    }
+    #accountPopup > form div:first-of-type a:hover{
+        text-decoration: none;
+    }
+    #accountPopup div:last-of-type a:first-of-type{
+        padding: 15px 40px; background-color: black; color: #b5b5b5;
+        border: none; font-size: 15px; font-weight: 400; font-family: 'Sen';
+        display: inline-block;
+    }
+    #accountPopup div:last-of-type a:first-of-type:hover{
+        background-color: #b5b5b5; color: black;
+    }
+    #accountPopup div:last-of-type a:last-of-type{
+        padding: 15px 13.5px; background-color: black; color: white;
+        margin-left: 10px; font-size: 15px; font-weight: 400;
+        display: inline-block;
+    }
+    #accountPopup div:last-of-type a:last-of-type:hover{
+        background-color: #b5b5b5; color: black;
+    }
+    #accountPopup > input[type='button']:last-of-type{
+        /* background: url('../images/close.svg') left top / cover no-repeat transparent;
+        width: 21px; height: 23px; border: none; text-indent: -9999px; 
+        position: absolute; right: 5%; top: 0; */
+        display: none;
+    }
+
+
+    #cartPopup{
+        padding: 35px 25px;
+        width: 50%; height: 100%;
+        background-color: white; position: fixed; 
+        left: 0; top: 135px; font-family: 'Sen'; display: none;
+    }
+    #cartPopup > input[type='button']{
+        /* background: url('../images/close.svg') left top / cover no-repeat transparent;
+        width: 21px; height: 23px; border: none; text-indent: -9999px; 
+        position: absolute; right: 5%; top: 0; */
+        display: none;
+    }
+    #cartPopup [id$='Box']{
+        display: none;
+    }
+    #cartPopup [id$='Box'].active{
+        display: block;
+    }
+    #cartPopup.active{
+        display: block; z-index: 100;
+    }
+    #cartPopup > div:first-of-type h2{
+        font-size: 20px; font-weight: 400; margin-bottom: 50px;
+    }
+    #cartPopup > div:first-of-type a{
+        display: block; background-color: #efefef;
+        padding: 15px 30px; font-size: 15px; font-weight: 400; font-family: 'Sen';
+        color: black; width: 30%; text-align: center;
+    }
+    #cartPopup > div:first-of-type a:hover{
+        background-color: black; color: white;
+    }
+    #cartPopup div:last-of-type > div{
+        position: relative; margin-bottom: 130px;
+    }
+    #cartPopup div:last-of-type div h2{
+        font-size: 20px; font-weight: 400;
+        border-bottom: 2px solid #b5b5b5; padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+    #cartPopup div:last-of-type div h2 small{
+        font-size: 15px; font-weight: 400;
+        position: absolute; right: 0; top: 0;
+    }
+    #cartPopup div:last-of-type > div h3{
+        font-size: 15px; font-weight: 400;
+        border-bottom: 2px solid #9384d1;
+        padding-bottom: 15px; margin-bottom: 40px;
+    }
+    #cartPopup div:last-of-type > div h3 strong{
+        position: absolute; right: 0;
+        font-size: 15px; font-weight: 400;
+    }
+    #cartPopup div:last-of-type > div span{
+        position: absolute; right: 0;
+    }
+    #cartPopup div:last-of-type > div span a{
+        display: inline-block;
+    }
+    #cartPopup div:last-of-type > div span a:first-of-type{
+        background-color: transparent; text-decoration: underline;
+        color: black; font-size: 15px; font-weight: 400;
+    }
+    #cartPopup div:last-of-type > div span a:first-of-type:hover{
+        text-decoration: none;
+    }
+    #cartPopup div:last-of-type > div span a:last-of-type{
+        background-color: black; color: white;
+        font-size: 15px; font-weight: 400; padding: 15px 45px;
+        margin-left: 10px;
+    }
+    #cartPopup div:last-of-type > div span a:last-of-type:hover{
+        background-color: #efefef; color: black;
+    }
+
+    #cartPopup div:last-of-type ul::after{
+        content: ''; display: block; clear: both;
+    }
+    #cartPopup div:last-of-type ul li{
+        float: right; padding: 25px;
+    }
+    #cartPopup div:last-of-type ul li:hover{
+        border: 2px solid black;
+    }
+    #cartPopup div:last-of-type ul li img{
+        max-width: 200px; width: 100%;
+    }
+    #cartPopup div:last-of-type ul li div:first-of-type{
+        margin-bottom: 10px;
+    }
+    #cartPopup div:last-of-type ul li div:first-of-type small{
+        font-size: 15px; font-weight: 400; margin-bottom: 10px;
+        display: block;
+    }
+    #cartPopup div:last-of-type ul li div:first-of-type h3{
+        font-size: 15px; font-weight: 700; margin-bottom: 10px;
+    }
+    #cartPopup div:last-of-type ul li div:first-of-type span{
+        font-size: 15px; font-weight: 400; margin-bottom: 10px;
+    }
+    #cartPopup div:last-of-type ul li div:first-of-type span strong{
+        font-size: 15px; font-weight: 700;
+    }
+    #cartPopup div:last-of-type ul li div:last-of-type{
+        position: relative;
+    }
+    #cartPopup div:last-of-type ul li div:last-of-type span button{
+        font-size: 15px; font-weight: 400;
+        border: none; background-color: #efefef;
+        width: 22px; height: 22px; border-radius: 11px;
+    }
+    #cartPopup div:last-of-type ul li div:last-of-type span strong{
+        font-size: 15px; font-weight: 400;
+    }
+    #cartPopup div:last-of-type ul li div:last-of-type input{
+        position: absolute; right: 0; bottom: 0;
+        border: none; background-color: transparent;
+        text-decoration: underline; font-size: 10px; font-weight: 400;
+        font-family: 'Sen';
+    }
+    #cartPopup div:last-of-type ul li div:last-of-type input:hover{
+        text-decoration: none;
+    }
+
+    #infoPopup{
+        background-color: white;
+        padding: 20px 15px;
+        position: fixed; max-width: 350px; font-family:'Sen';
+        left: 30%; top: 25%; z-index: 100;
+        box-shadow: 3px 3px 3px #b5b5b5;
+    }
+    #infoPopup div h3{
+        font-size: 10px; font-weight: 700; margin-bottom: 20px;
+    }
+    #infoPopup div p{
+        font-size: 10px; font-weight: 400; line-height: 15px;
+        max-width: 250px; margin-bottom: 30px;
+    }
+    #infoPopup div a:first-of-type{
+        font-size: 10px; font-weight: 400; color: white;
+        background-color: black; display: block; text-align: center;
+        width: 155px; padding: 10px 25px;
+        margin: 0 auto 30px;
+    } 
+    #infoPopup div a:last-of-type{
+        display: block; color: black; text-align: center;
+        font-size: 10px; font-weight: 400; text-decoration: underline;
+    }
+    #infoPopup div a:last-of-type:hover{
+        text-decoration: none;
+    }
+    #infoPopup > input[type='button']{
+        background: url('../images/close.svg') left top / cover no-repeat transparent;
+        width: 20px; height: 20px; border: none; text-indent: -9999px; 
+        position: absolute; right: 5%; top: 5%;
+    }
+
+
+    footer{
+        background-color: #9384d1; padding: 105px 2% 105px;
+        font-family: 'Sen';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    }
+    footer > div::after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div div:not(:nth-of-type(3),:nth-of-type(4)){
+        float: left; width: 45%; 
+    }
+    footer > div{
+        max-width: 720px; margin: 0 auto;
+    }
+    footer > div div:first-of-type{
+        margin-left: 0; border-bottom: 2px solid #b5b5b5;
+        width: 320px;
+    }
+    footer > div div h2{
+        font-size: 10px; font-weight: 700; 
+        color: black;
+    }
+    footer > div div:first-of-type h2{
+        margin-bottom: 65px;
+    }
+    footer > div div:first-of-type input[type='email']{
+        border: none; background-color: transparent;
+        font-size: 15px; font-weight: 400; font-family: 'Sen';
+        width: 250px;
+    }
+    footer > div div:first-of-type input[type='email']::placeholder{
+        color: black; font-size: 15px; font-weight: 400; font-family: 'Sen';
+    }
+    footer > div div:first-of-type input[type='submit']{
+        font-size: 10px; font-weight: 400; border: none; background-color: transparent; margin-right: 10px;
+        font-family: 'Sen'; background: url('../images/arrow_forward_FILL0_wght400_GRAD0_opsz24.svg') right top / contain no-repeat;
+        padding-right: 20px;
+    }
+    footer > div div:nth-of-type(2){
+        margin-left: 10%;
+    }
+    footer > div div:nth-of-type(2) h2{
+        margin-bottom: 30px; 
+    }
+    footer > div div:nth-of-type(2) ul li{
+        float: left; width: 50%; margin-bottom: 30px;
+    }
+    footer > div div:nth-of-type(2) ul li a{
+        display: block; font-size: 10px; font-weight: 400;
+        color: black;
+    }
+    footer > div div:nth-of-type(2) ul li a:hover{
+        color: #b5b5b5;
+    }
+    footer > div div:nth-of-type(3){
+        clear: both;
+        /* margin-left: 2% */
+    }
+    footer > div div:nth-of-type(3) > a{
+        font-size: 10px; color: black; font-weight: 400; margin-bottom: 40px;
+        display: block; text-decoration: underline;
+    }
+    footer > div div:nth-of-type(3) > a:hover{
+        text-decoration: none;
+    }
+    footer > div div:nth-of-type(3) ul li{
+        display: inline-block;
+    }
+    footer > div div:nth-of-type(3) ul li:not(:first-child){
+        margin-left: 15px;
+    }
+    footer > div div:nth-of-type(3) ul li a{
+        display: block; text-indent: -9999px; margin-bottom: 40px;
+        width: 28px; line-height: 25px; background-repeat: no-repeat;
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(1) a{background-image: url('../images/ico_01.svg');}
+    footer > div div:nth-of-type(3) ul li:nth-child(2) a{background-image: url('../images/ico_02.svg');}
+    footer > div div:nth-of-type(3) ul li:nth-child(3) a{background-image: url('../images/ico_03.svg');}
+    footer > div div:nth-of-type(3) ul li:nth-child(4) a{background-image: url('../images/ico_04.svg');}
+    footer > div div:nth-of-type(3) ul li:nth-child(5) a{background-image: url('../images/ico_05.svg');}
+    footer > div div:nth-of-type(3) ul li:nth-child(6) a{background-image: url('../images/ico_06.svg');}
+    footer > div div:nth-of-type(3) p{
+        font-size: 10px; font-weight: 700; margin-bottom: 30px;
+    }
+    footer > div div:last-of-type{
+        clear: both; position: relative;
+    }
+    footer > div div:last-of-type a{
+        display: inline-block; font-size: 10px; font-weight: 700;
+        max-width: 65px; color: black;
+    }
+    footer > div div:last-of-type a:not(:first-child){
+        margin-left: 25px;
+    }
+    footer > div div:last-of-type button{
+        border: none; background-color: white; padding: 5px 20px;
+        position: absolute; left: 40%;
+    }
+    footer > div div:last-of-type span{
+        position: absolute; right: 0;
+    }
+    footer > div div:last-of-type span img{
+        width: 100%; max-width: 30px; vertical-align: middle;
+    }
+    footer > div div:last-of-type span u{
+        font-size: 10px; font-weight: 400;
+    }
+    footer > div:last-of-type{
+        position: fixed; right: 1.5%; bottom: 5%;
+    }
+    footer > div:last-of-type a{
+        display: block; z-index: 100;
+        background: url('../images/top_button.png') left top / cover no-repeat;
+        text-indent: -9999px; width: 35px; height: 35px;
+        filter: drop-shadow(1px 2px 4px #b5b5b5);
+    }
+}
+
+
+@media screen and (min-width:1280px){
+    .mui{
+        display: none;
+    }
+    header{
+        font-family: 'Sen'; background-color: #9384d1; position: fixed; width: 100%;
+        z-index: 10;
+    }
+    header > div,
+    header > nav > div:first-of-type{
+        padding: 30px 4.16%; box-sizing: border-box;
+        position: relative;
+    }
+    header > div span{
+        width: 15%; 
+        position: absolute; top: 40%; left: 0;
+    }
+    header > div span img{
+        width: 100%; max-width: 30px; vertical-align: middle;
+    }
+    header > div span u{
+        font-size: 10px; font-weight: 400; padding-left: 10px;
+    }
+    header > div p{
+        font-size: 20px; font-weight: 400; color: #b5b5b5;
+        text-align: center;
+    }
+    header > div p:hover{
+        color: black;
+    }
+    header > div input[type='button']{
+        border: none; background-color: transparent;
+        font-size: 10px; font-weight: 400;
+        position: absolute; right: 0; top: 45%;
+        
+    } 
+
+
+    header > nav{
+        font-family:'Sen'; position: relative;
+    }
+    header > nav .material-symbols-outlined{
+        display: none;
+    }
+    header > nav > div:first-of-type{
+        background-color: white;
+    }
+    header > nav > div:first-of-type > ul,
+    header > nav > div:first-of-type > div{
+        position: absolute; top: 0; box-sizing: border-box;
+        width: 41%; display: flex; align-items: center;
+        height: 150px; flex-flow: row nowrap;
+    }
+    header > nav > div:first-of-type > ul{
+        left: 4%; justify-content: flex-start;
+    }
+    header > nav > div:first-of-type > ul::after{
+        content: ''; display: block; clear: both;
+    }
+    header > nav > div:first-of-type > ul li{
+        color: black; font-size: 15px; font-weight: 700;
+        padding: 40px 0;
+    }
+    header > nav > div:first-of-type > ul li:not(:first-child){
+        margin-left: 10%;
+    }
+    header > nav > div:first-of-type h1{
+        max-width: 185px; width: 10%; margin: 0 auto;
+    }
+    header > nav > div:first-of-type h1 a{
+        display: block; 
+    }
+    header > nav > div:first-of-type h1 a img{
+        width: 100%;
+    }
+    header > nav > div:first-of-type > div{
+        right: 4%; justify-content: flex-end;
+    }
+    header > nav > div:first-of-type div ul{
+        width: 70%; text-align: right;
+    }
+    header > nav > div:first-of-type div ul li{
+        display: inline-block; color: black; font-size: 15px; font-weight: 700; 
+        line-height: 31px;
+    }
+    header > nav > div:first-of-type div ul li:not(:first-child){
+        margin-left: 15%;
+    }
+    header > nav > div:first-of-type > div input{
+        border: none; background-color: transparent; text-indent: -9999px;
+        width: 28px; height: 31px; margin-left: 8%;
+    }
+    header > nav > div:first-of-type > div input[type='button']:first-of-type{
+        background: url('../images/lock_FILL0_wght300_GRAD0_opsz24.svg') left top / cover no-repeat;
+    }
+    header > nav > div:first-of-type > div input[type='button']:first-of-type:hover{
+        background: url('../images/person_FILL0_wght200_GRAD0_opsz24.svg') left top / cover no-repeat;
+    }
+    header > nav > div:first-of-type > div input[type='button']:last-of-type{
+        background: url('../images/shopping_bag_FILL0_wght300_GRAD0_opsz24.svg') left top / cover no-repeat;
+    }
+    header > nav > div:first-of-type div span{
+        font-size: 15px; font-weight: 900;
+    }
+    
+
+    header > nav div:nth-of-type(2) ul{
+        display: none; padding: 25px 80px; position: absolute;
+        background-color: white; font-family: 'Sen'; width: 35%; top: 150px;
+    }
+    header > nav div:nth-of-type(2){
+        position: relative; height: 0;
+    }
+    header > nav div:nth-of-type(2).active{
+        height: 850px; position: absolute; width: 40%;
+    }
+    header > nav div:nth-of-type(2) ul.active{
+        display: block; z-index: 10;
+    }
+    header > nav > div:nth-of-type(2) > .closeBtn{
+        display: none; z-index: 100; position: absolute; left: 45%; top: 0; 
+        border: none; background-color: transparent; background: url('../images/close.svg') left top / cover no-repeat;
+        width: 31px; height: 33px; text-indent: -9999px;
+    }
+    header > nav > div:nth-of-type(2).active .closeBtn{
+        display: block;
+    }
+    header > nav > div:nth-of-type(2) .gnbPanel{
+        top: 0; height: 100%; left: 0;
+    }
+    header > nav #fragrance li{
+        display: block;
+    }
+    header > nav #fragrance li a{
+        display: block; font-size: 20px; font-weight: 400;
+        color: black;
+    }
+    header > nav #fragrance li a:hover{
+        color: #b5b5b5;
+    }
+    header > nav #fragrance li:not(:nth-child(14),:last-child) a{
+        margin-bottom: 23px;
+    }
+    header > nav #fragrance li:nth-child(14) a{
+        margin-bottom: 80px;
+    }
+    header > nav #beauty li{
+        display: block;
+    }
+    header > nav #beauty li a{
+        display: block; font-size: 20px; font-weight: 400;
+        color: black;
+    }
+    header > nav #beauty li a:hover{
+        color: #b5b5b5;
+    }
+    header > nav #beauty li:not(:nth-child(11),:last-child) a{
+        margin-bottom: 23px;
+    }
+    header > nav #beauty li:nth-child(11) a{
+        margin-bottom: 80px;
+    }
+    header > nav #accessories li{
+        display: block;
+    }
+    header > nav #accessories li a{
+        display: block; font-size: 20px; font-weight: 400;
+        color: black;
+    }
+    header > nav #accessories li a:hover{
+        color: #b5b5b5;
+    }
+    header > nav #accessories li:not(:nth-child(9),:last-child) a{
+        margin-bottom: 23px;
+    }
+    header > nav #accessories li:nth-child(9) a{
+        margin-bottom: 80px;
+    }
+    header > nav #life li{
+        display: block;
+    }
+    header > nav #life li a{
+        display: block; font-size: 20px; font-weight: 400;
+        color: black;
+    }
+    header > nav #life li a:hover{
+        color: #b5b5b5;
+    }
+    header > nav #life li:not(:nth-child(5),:last-child) a{
+        margin-bottom: 23px;
+    }
+    header > nav #life li:nth-child(5) a{
+        margin-bottom: 80px;
+    }
+    header > nav #about li{
+        display: block;
+    }
+    header > nav #about li a{
+        display: block; font-size: 20px; font-weight: 400;
+        color: black;
+    }
+    header > nav #about li a:hover{
+        color: #b5b5b5;
+    }
+
+
+    header > nav #search h3{
+        font-size: 30px; font-weight: 400; margin-bottom: 75px;
+        line-height: 40px;
+    }
+    header > nav #search input[type='search']{
+        font-size: 20px; font-weight: 400; font-family: 'Sen';
+        padding-left: 40px;
+        background: url('../images/search.svg') left top / contain no-repeat;
+        border: none;
+        border-bottom: 2px solid #b5b5b5;
+        margin-bottom: 350px;
+    }
+    header > nav #search input[type='search']::placeholder{
+        color: #b5b5b5;
+    }
+    header > nav #search div a{
+        display: block; font-size: 15px; font-weight: 400; color: black;
+        margin-bottom: 35px;
+    }
+
+
+
+    #newsPopup{
+        background-color: white; 
+        padding: 150px 100px 40px;
+        position: fixed; max-width: 1075px; font-family:'Sen';
+        width: 40%; right: 0; top: 0; z-index: 100;
+    }
+    #newsPopup small{
+        font-size: 15px; font-weight: 400; font-family: 'Sen';
+        position: absolute; right: 5%; top: 5%;
+    }
+    #newsPopup div:first-of-type{
+       width: 50%;
+    }
+    #newsPopup div:first-of-type h2{
+        margin-bottom: 30px;
+    }
+    #newsPopup div:first-of-type h2 img{
+        width: 100%; max-width: 226px; display: block;
+    }
+    #newsPopup div:first-of-type p{
+        font-size: 25px; font-weight: 400;
+        line-height: 40px; margin-bottom: 250px;
+    }
+    #newsPopup div:first-of-type p strong{
+        font-size: 25px; font-weight: 700; display: block;
+        margin-bottom: 30px;
+    }
+    #newsPopup > img{
+        max-width: 305px; width: 50%; position: absolute; right: 5%;
+        top: 25%;
+    }
+    #newsPopup div:last-of-type{
+        clear: both;
+        border-bottom: 1px solid #b5b5b5;
+    }
+    #newsPopup div:last-of-type input[type='email']{
+        font-size: 25px; font-weight: 400; font-family: 'Sen';
+        border: none; margin-right: 265px; padding: 10px;
+    }
+    #newsPopup div:last-of-type input[type='email']::placeholder{
+        font-size: 25px; font-weight: 400; color: #b5b5b5; font-family: 'Sen';
+    }
+    #newsPopup div:last-of-type input[type='submit']{
+        font-size: 20px; font-weight: 400; border: none; background-color: transparent;
+        font-family: 'Sen'; padding-right: 40px;
+        background: url(../images/arrow_forward_FILL0_wght400_GRAD0_opsz24.svg) right top / contain no-repeat;
+    }
+    #newsPopup > input[type='button']{
+        background: url('../images/close.svg') left top / cover no-repeat transparent;
+        width: 31px; height: 33px; border: none; text-indent: -9999px; 
+        position: absolute; right: 5%; top: 15%;
+    }
+
+    
+
+    #accountPopup{
+        position: fixed; right: 0; top: 230px;
+        font-family: 'Sen'; padding: 35px 80px;
+        width: 40%; display: none; background-color: #ffffff;
+        height: 100%;
+    }
+    #accountPopup.active{
+        display: block; z-index: 10;
+    }
+    #accountPopup h2{
+        font-size: 30px; font-weight: 400; margin-bottom: 90px;
+    }
+    #accountPopup input[type='email']{
+        border: none; font-size: 20px; font-weight: 400; font-family: 'Sen';
+        border-bottom: 2px solid #b5b5b5; display: block; margin-bottom: 80px;
+        width: 100%;
+        padding: 10px; box-sizing: border-box;
+    }
+    #accountPopup input[type='email']::placeholder{
+        color: #b5b5b5;
+    }
+    #accountPopup input[type='password']{
+        border: none; font-size: 20px; font-weight: 400; font-family: 'Sen';
+        border-bottom: 2px solid #b5b5b5; display: block; margin-bottom: 35px;
+        width: 100%; padding: 10px; box-sizing: border-box;
+    }
+    #accountPopup input[type='password']::placeholder{
+        color: #b5b5b5;
+    }
+    #accountPopup > form div:first-of-type{
+        text-align: right; margin-bottom: 70px; display: block;
+    }
+    #accountPopup > form div:first-of-type a{
+        font-size: 20px; font-weight: 400; color: black;
+        text-decoration: underline;
+    }
+    #accountPopup > form div:first-of-type a:hover{
+        text-decoration: none;
+    }
+    #accountPopup div:last-of-type a:first-of-type{
+        padding: 15px 100px; background-color: black; color: #b5b5b5;
+        border: none; font-size: 20px; font-weight: 400; font-family: 'Sen';
+        display: inline-block;
+    }
+    #accountPopup div:last-of-type a:first-of-type:hover{
+        background-color: #b5b5b5; color: black;
+    }
+    #accountPopup div:last-of-type a:last-of-type{
+        padding: 15px 45.5px; background-color: black; color: white;
+        margin-left: 25px; font-size: 20px; font-weight: 400;
+        display: inline-block;
+    }
+    #accountPopup div:last-of-type a:last-of-type:hover{
+        background-color: #b5b5b5; color: black;
+    }
+    #accountPopup > input[type='button']:last-of-type{
+        background: url('../images/close.svg') left top / cover no-repeat transparent;
+        width: 31px; height: 33px; border: none; text-indent: -9999px; 
+        position: absolute; right: 5%; top: 0;
+    }
+
+
+    #cartPopup{
+        padding: 35px 80px;
+        width: 40%; height: 100%;
+        background-color: white; position: fixed; 
+        right: 0; top: 230px; font-family: 'Sen'; display: none;
+    }
+    #cartPopup > input[type='button']{
+        background: url('../images/close.svg') left top / cover no-repeat transparent;
+        width: 31px; height: 33px; border: none; text-indent: -9999px; 
+        position: absolute; right: 5%; top: 0;
+    }
+    #cartPopup [id$='Box']{
+        display: none;
+    }
+    #cartPopup [id$='Box'].active{
+        display: block;
+    }
+    #cartPopup.active{
+        display: block; z-index: 10;
+    }
+    /* #cartPopup div:first-of-type{
+        display: none;
+    } */
+    #cartPopup > div:first-of-type h2{
+        font-size: 30px; font-weight: 400; margin-bottom: 70px;
+    }
+    #cartPopup > div:first-of-type a{
+        display: block; background-color: #efefef;
+        padding: 15px 70px; font-size: 20px; font-weight: 400; font-family: 'Sen';
+        color: black; width: 20%; text-align: center;
+    }
+    #cartPopup > div:first-of-type a:hover{
+        background-color: black; color: white;
+    }
+    #cartPopup div:last-of-type > div{
+        position: relative; margin-bottom: 130px;
+    }
+    #cartPopup div:last-of-type div h2{
+        font-size: 30px; font-weight: 400;
+        border-bottom: 2px solid #b5b5b5; padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+    #cartPopup div:last-of-type div h2 small{
+        font-size: 20px; font-weight: 400;
+        position: absolute; right: 0; top: 0;
+    }
+    #cartPopup div:last-of-type > div h3{
+        font-size: 20px; font-weight: 400;
+        border-bottom: 2px solid #9384d1;
+        padding-bottom: 20px; margin-bottom: 50px;
+    }
+    #cartPopup div:last-of-type > div h3 strong{
+        position: absolute; right: 0;
+        font-size: 20px; font-weight: 400;
+    }
+    #cartPopup div:last-of-type > div span{
+        position: absolute; right: 0;
+    }
+    #cartPopup div:last-of-type > div span a{
+        display: inline-block;
+    }
+    #cartPopup div:last-of-type > div span a:first-of-type{
+        background-color: transparent; text-decoration: underline;
+        color: black; font-size: 20px; font-weight: 400;
+    }
+    #cartPopup div:last-of-type > div span a:first-of-type:hover{
+        text-decoration: none;
+    }
+    #cartPopup div:last-of-type > div span a:last-of-type{
+        background-color: black; color: white;
+        font-size: 20px; font-weight: 400; padding: 15px 85px;
+        margin-left: 35px;
+    }
+    #cartPopup div:last-of-type > div span a:last-of-type:hover{
+        background-color: #efefef; color: black;
+    }
+
+    #cartPopup div:last-of-type ul::after{
+        content: ''; display: block; clear: both;
+    }
+    #cartPopup div:last-of-type ul li{
+        float: right; padding: 25px;
+    }
+    #cartPopup div:last-of-type ul li:hover{
+        border: 2px solid black;
+    }
+    #cartPopup div:last-of-type ul li img{
+        max-width: 260px; width: 100%;
+    }
+    #cartPopup div:last-of-type ul li div:first-of-type{
+        margin-bottom: 10px;
+    }
+    #cartPopup div:last-of-type ul li div:first-of-type small{
+        font-size: 20px; font-weight: 400; margin-bottom: 10px;
+        display: block;
+    }
+    #cartPopup div:last-of-type ul li div:first-of-type h3{
+        font-size: 20px; font-weight: 700; margin-bottom: 10px;
+    }
+    #cartPopup div:last-of-type ul li div:first-of-type span{
+        font-size: 20px; font-weight: 400; margin-bottom: 10px;
+    }
+    #cartPopup div:last-of-type ul li div:first-of-type span strong{
+        font-size: 20px; font-weight: 700;
+    }
+    #cartPopup div:last-of-type ul li div:last-of-type{
+        position: relative;
+    }
+    #cartPopup div:last-of-type ul li div:last-of-type span button{
+        font-size: 20px; font-weight: 400;
+        border: none; background-color: #efefef;
+        width: 22px; height: 22px; border-radius: 11px;
+    }
+    #cartPopup div:last-of-type ul li div:last-of-type span strong{
+        font-size: 15px; font-weight: 400;
+    }
+    #cartPopup div:last-of-type ul li div:last-of-type input{
+        position: absolute; right: 0; bottom: 0;
+        border: none; background-color: transparent;
+        text-decoration: underline; font-size: 15px; font-weight: 400;
+        font-family: 'Sen';
+    }
+    #cartPopup div:last-of-type ul li div:last-of-type input:hover{
+        text-decoration: none;
+    }
+
+    #infoPopup{
+        background-color: white;
+        padding: 40px 30px;
+        position: fixed; max-width: 350px; font-family:'Sen';
+        left: 45%; top: 35%; z-index: 100;
+        box-shadow: 3px 3px 3px #b5b5b5;
+    }
+    #infoPopup div h3{
+        font-size: 15px; font-weight: 700; margin-bottom: 35px;
+    }
+    #infoPopup div p{
+        font-size: 15px; font-weight: 400; line-height: 24px;
+        max-width: 280px; margin-bottom: 30px;
+    }
+    #infoPopup div a:first-of-type{
+        font-size: 20px; font-weight: 400; color: white;
+        background-color: black; display: block; text-align: center;
+        width: 270px; padding: 10px 25px; margin-bottom: 30px;
+    } 
+    #infoPopup div a:last-of-type{
+        display: block; color: black; text-align: center;
+        font-size: 15px; font-weight: 400; text-decoration: underline;
+    }
+    #infoPopup div a:last-of-type:hover{
+        text-decoration: none;
+    }
+    #infoPopup > input[type='button']{
+        background: url('../images/close.svg') left top / cover no-repeat transparent;
+        width: 31px; height: 33px; border: none; text-indent: -9999px; 
+        position: absolute; right: 5%; top: 5%;
+    }
+
+
+    footer{
+        background-color: #9384d1; padding: 125px 4% 120px;
+        font-family: 'Sen';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    }
+    footer > div::after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div div:not(:nth-of-type(4)){
+        float: left; 
+        width: 31%; 
+        /* width: 32%; */
+    }
+    footer > div{
+        max-width: 1760px; margin: 0 auto;
+    }
+    footer > div div:first-of-type{
+        margin-left: 0; border-bottom: 2px solid #b5b5b5;
+        width: 500px;
+    }
+    footer > div div h2{
+        font-size: 15px; font-weight: 700; 
+        color: black;
+    }
+    footer > div div:first-of-type h2{
+        margin-bottom: 85px;
+    }
+    footer > div div:first-of-type input[type='email']{
+        border: none; background-color: transparent;
+        font-size: 20px; font-weight: 400; font-family: 'Sen';
+        width: 370px;
+    }
+    footer > div div:first-of-type input[type='email']::placeholder{
+        color: black; font-size: 20px; font-weight: 400; font-family: 'Sen';
+    }
+    footer > div div:first-of-type input[type='submit']{
+        font-size: 20px; font-weight: 400; border: none; background-color: transparent; margin-right: 25px;
+        font-family: 'Sen'; background: url('../images/arrow_forward_FILL0_wght400_GRAD0_opsz24.svg') right top / contain no-repeat;
+        padding-right: 40px;
+    }
+    footer > div div:nth-of-type(2){
+        margin-left: 3.5%;
+    }
+    footer > div div:nth-of-type(2) h2{
+        margin-bottom: 30px;
+    }
+    footer > div div:nth-of-type(2) ul li{
+        float: left; width: 50%; margin-bottom: 30px;
+    }
+    footer > div div:nth-of-type(2) ul li a{
+        display: block; font-size: 15px; font-weight: 400;
+        color: black;
+    }
+    footer > div div:nth-of-type(2) ul li a:hover{
+        color: #b5b5b5;
+    }
+    footer > div div:nth-of-type(3){
+        margin-left: 3.5%
+    }
+    footer > div div:nth-of-type(3) > a{
+        font-size: 20px; color: black; font-weight: 400; margin-bottom: 75px;
+        display: block; text-decoration: underline;
+    }
+    footer > div div:nth-of-type(3) > a:hover{
+        text-decoration: none;
+    }
+    footer > div div:nth-of-type(3) ul li{
+        display: inline-block;
+    }
+    footer > div div:nth-of-type(3) ul li:not(:first-child){
+        margin-left: 30px;
+    }
+    footer > div div:nth-of-type(3) ul li a{
+        display: block; text-indent: -9999px; margin-bottom: 55px;
+        width: 28px; line-height: 25px; background-repeat: no-repeat;
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(1) a{background-image: url('../images/ico_01.svg');}
+    footer > div div:nth-of-type(3) ul li:nth-child(2) a{background-image: url('../images/ico_02.svg');}
+    footer > div div:nth-of-type(3) ul li:nth-child(3) a{background-image: url('../images/ico_03.svg');}
+    footer > div div:nth-of-type(3) ul li:nth-child(4) a{background-image: url('../images/ico_04.svg');}
+    footer > div div:nth-of-type(3) ul li:nth-child(5) a{background-image: url('../images/ico_05.svg');}
+    footer > div div:nth-of-type(3) ul li:nth-child(6) a{background-image: url('../images/ico_06.svg');}
+    footer > div div:nth-of-type(3) p{
+        font-size: 15px; font-weight: 700;
+    }
+    footer > div div:last-of-type{
+        clear: both; position: relative;
+    }
+    footer > div div:last-of-type a{
+        display: inline-block; font-size: 15px; font-weight: 700;
+        max-width: 100px; color: black;
+    }
+    footer > div div:last-of-type a:not(:first-child){
+        margin-left: 45px;
+    }
+    footer > div div:last-of-type button{
+        border: none; background-color: white; padding: 10px 55px;
+        position: absolute; left: 38%; bottom: 0;
+    }
+    footer > div div:last-of-type span{
+        position: absolute; right: 22%; bottom: 0;
+    }
+    footer > div div:last-of-type span img{
+        width: 100%; max-width: 30px; vertical-align: middle;
+    }
+    footer > div div:last-of-type span u{
+        font-size: 10px; font-weight: 400;
+    }
+    footer > div:last-of-type{
+        position: fixed; right: 1.5%; bottom: 5%;
+    }
+    footer > div:last-of-type a{
+        display: block; z-index: 100;
+        background: url('../images/top_button.png') left top / cover no-repeat;
+        text-indent: -9999px; width: 50px; height: 50px;
+        filter: drop-shadow(1px 2px 4px #b5b5b5);
+    }
+}
+
