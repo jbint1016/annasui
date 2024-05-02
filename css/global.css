@@ -543,7 +543,7 @@ ul,li{
 
 
     footer{
-        background-color: #9384d1; padding: 55px 3%;
+        background-color: #9384d1; padding: 55px 2%;
         font-family: 'Sen';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     }
     /* footer > div::after{
@@ -572,7 +572,7 @@ ul,li{
     footer > div div:first-of-type input[type='email']{
         border: none; background-color: transparent;
         font-size: 10px; font-weight: 400; font-family: 'Sen';
-        width: 180px; margin-right: 20px;
+        width: 180px; margin-right: 385px;
     }
     footer > div div:first-of-type input[type='email']::placeholder{
         color: black; font-size: 10px; font-weight: 400; font-family: 'Sen';
