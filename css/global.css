@@ -571,8 +571,7 @@ ul,li{
     footer > div div:first-of-type input[type='email']{
         border: none; background-color: transparent;
         font-size: 10px; font-weight: 400; font-family: 'Sen';
-        width: 90%; box-sizing: border-box;
-        /* margin-right: 25px;  */
+        width: 75%; box-sizing: border-box;
     }
     footer > div div:first-of-type input[type='email']::placeholder{
         color: black; font-size: 10px; font-weight: 400; font-family: 'Sen';
