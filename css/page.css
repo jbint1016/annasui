@@ -37,7 +37,7 @@ ul,li{
     }
     .indexContainer > div:first-of-type{
         background: url('../images/sodapdf.png') left top / cover no-repeat;
-        padding: 85px 0; font-family: 'Sen'; position: relative;
+        padding: 105px 0; font-family: 'Sen'; position: relative;
         margin-bottom: 45px;
     }
     .indexContainer > div:first-of-type h2{
