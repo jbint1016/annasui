@@ -223,17 +223,18 @@ ul,li{
 
 
     header > nav #search h3{
-        /* font-size: 30px;  */
-        /* margin-bottom: 75px; */
-        /* line-height: 40px; */
-        font-size: 15px; line-height: 20px;
-        margin-bottom: 40px; font-weight: 400; 
+        font-size: 25px; 
+        margin-bottom: 75px;
+        line-height: 35px;
+        /* font-size: 15px; line-height: 20px;
+        margin-bottom: 40px;  */
+        font-weight: 400; 
     }
     header > nav #search input[type='search']{
         font-size: 10px; font-weight: 400; font-family: 'Sen';
         padding-left: 20px;
         background: url('../images/search.svg') left top / contain no-repeat;
-        border: none;
+        border: none; width: 90%; box-sizing: border-box;
         border-bottom: 2px solid #b5b5b5;
         margin-bottom: 200px;
     }
