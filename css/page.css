@@ -4693,13 +4693,17 @@ ul,li{
 
 
     .aboutContainer{
-        font-family: 'Sen'; max-width: 720px; margin: 0 auto;
+        font-family: 'Sen'; 
+        /* max-width: 720px; */
+        padding: 105px 20px 0;
+        margin: 0 auto;
     }
     .aboutContainer > figure:first-of-type{
         margin-bottom: 30px;
     }
     .aboutContainer > figure:first-of-type img{
-        max-width: 720px; width: 100%; margin-bottom: 45px;
+        /* max-width: 720px;  */
+        width: 100%; margin-bottom: 45px;
     }
     .aboutContainer > figure:first-of-type p{
         text-align: center; font-weight: 400; font-size: 10px;
