@@ -2540,7 +2540,7 @@ ul,li{
         display: inline-block; text-indent: -9999px;
         background: url('../images/logout.png') left center / contain no-repeat ;
         width: 10px; line-height: 10px; position: absolute;
-        right: 20%; top: 0;
+        right: 15%; top: 0;
     }
     .summaryContainer aside div > a{
         font-size: 10px; font-weight: 400; 
