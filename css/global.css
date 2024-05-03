@@ -561,6 +561,7 @@ ul,li{
         /* margin-left: 0;  */
         border-bottom: 2px solid #b5b5b5;
         margin-bottom: 25px;
+        position: relative;
     }
     footer > div div h2{
         font-size: 10px; font-weight: 700; 
@@ -572,8 +573,8 @@ ul,li{
     footer > div div:first-of-type input[type='email']{
         border: none; background-color: transparent;
         font-size: 10px; font-weight: 400; font-family: 'Sen';
-        width: 75%; box-sizing: border-box;
-        margin-right: 10px;
+        width: 100%; box-sizing: border-box;
+        /* margin-right: 10px; */
     }
     footer > div div:first-of-type input[type='email']::placeholder{
         color: black; font-size: 10px; font-weight: 400; font-family: 'Sen';
@@ -581,7 +582,7 @@ ul,li{
     footer > div div:first-of-type input[type='submit']{
         font-size: 10px; font-weight: 400; border: none; background-color: transparent;
         font-family: 'Sen'; background: url('../images/arrow_forward_FILL0_wght400_GRAD0_opsz24.svg') right top / contain no-repeat;
-        padding-right: 20px;
+        padding-right: 20px; position: absolute; right: 0; bottom: 0;
     }
     footer > div div:nth-of-type(2){
         /* margin-left: 10%; */
@@ -1215,7 +1216,7 @@ ul,li{
     }
     footer > div div:first-of-type{
         margin-left: 0; border-bottom: 2px solid #b5b5b5;
-        width: 320px;
+        /* width: 45%; */
     }
     footer > div div h2{
         font-size: 10px; font-weight: 700; 
@@ -1227,13 +1228,13 @@ ul,li{
     footer > div div:first-of-type input[type='email']{
         border: none; background-color: transparent;
         font-size: 15px; font-weight: 400; font-family: 'Sen';
-        width: 250px;
+        width: 80%; box-sizing: border-box; position: relative;
     }
     footer > div div:first-of-type input[type='email']::placeholder{
         color: black; font-size: 15px; font-weight: 400; font-family: 'Sen';
     }
     footer > div div:first-of-type input[type='submit']{
-        font-size: 10px; font-weight: 400; border: none; background-color: transparent; margin-right: 10px;
+        font-size: 10px; font-weight: 400; border: none; background-color: transparent;
         font-family: 'Sen'; background: url('../images/arrow_forward_FILL0_wght400_GRAD0_opsz24.svg') right top / contain no-repeat;
         padding-right: 20px;
     }
@@ -1841,7 +1842,7 @@ ul,li{
     }
     footer > div div:first-of-type{
         margin-left: 0; border-bottom: 2px solid #b5b5b5;
-        width: 500px;
+        /* width: 30%; */
     }
     footer > div div h2{
         font-size: 15px; font-weight: 700; 
@@ -1853,13 +1854,13 @@ ul,li{
     footer > div div:first-of-type input[type='email']{
         border: none; background-color: transparent;
         font-size: 20px; font-weight: 400; font-family: 'Sen';
-        width: 370px;
+        width: 80%; box-sizing: border-box;
     }
     footer > div div:first-of-type input[type='email']::placeholder{
         color: black; font-size: 20px; font-weight: 400; font-family: 'Sen';
     }
     footer > div div:first-of-type input[type='submit']{
-        font-size: 20px; font-weight: 400; border: none; background-color: transparent; margin-right: 25px;
+        font-size: 20px; font-weight: 400; border: none; background-color: transparent;
         font-family: 'Sen'; background: url('../images/arrow_forward_FILL0_wght400_GRAD0_opsz24.svg') right top / contain no-repeat;
         padding-right: 40px;
     }
@@ -1923,7 +1924,7 @@ ul,li{
         position: absolute; left: 38%; bottom: 0;
     }
     footer > div div:last-of-type span{
-        position: absolute; right: 22%; bottom: 0;
+        position: absolute; right: 20.3%; bottom: 0;
     }
     footer > div div:last-of-type span img{
         width: 100%; max-width: 30px; vertical-align: middle;
