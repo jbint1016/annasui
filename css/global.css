@@ -959,9 +959,10 @@ ul,li{
     #newsPopup div:last-of-type input[type='email']{
         font-size: 15px; font-weight: 400; font-family: 'Sen';
         border: none; 
-        margin-right: 10px;
+        /* margin-right: 10px; */
         /* margin-right: 100px;  */
         padding: 10px;
+        box-sizing: border-box; width: 70%;
     }
     #newsPopup div:last-of-type input[type='email']::placeholder{
         font-size: 15px; font-weight: 400; color: #b5b5b5; font-family: 'Sen';
@@ -1550,7 +1551,9 @@ ul,li{
     #newsPopup{
         background-color: white; 
         padding: 150px 100px 40px;
-        position: fixed; max-width: 1075px; font-family:'Sen';
+        position: fixed; 
+        /* max-width: 1075px;  */
+        font-family:'Sen';
         width: 40%; right: 0; top: 0; z-index: 100;
     }
     #newsPopup small{
@@ -1584,7 +1587,10 @@ ul,li{
     }
     #newsPopup div:last-of-type input[type='email']{
         font-size: 25px; font-weight: 400; font-family: 'Sen';
-        border: none; margin-right: 265px; padding: 10px;
+        border: none; 
+        /* margin-right: 265px;  */
+        padding: 10px;
+        box-sizing: border-box; width: 75%;
     }
     #newsPopup div:last-of-type input[type='email']::placeholder{
         font-size: 25px; font-weight: 400; color: #b5b5b5; font-family: 'Sen';
