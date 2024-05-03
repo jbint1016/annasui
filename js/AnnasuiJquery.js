@@ -31,6 +31,7 @@ function menuControl(){
         }else{
             $(this).text("menu");
             $("#menuPopup").removeClass("active");
+            $("header").find(".active").removeClass("active");
         }
     });
     
