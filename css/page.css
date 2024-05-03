@@ -2540,10 +2540,11 @@ ul,li{
         display: inline-block; text-indent: -9999px;
         background: url('../images/logout.png') left center / contain no-repeat ;
         width: 10px; line-height: 10px; position: absolute;
-        right: 18%; top: 0;
+        right: 16%; top: 0;
     }
     .summaryContainer aside div > a{
         font-size: 10px; font-weight: 400; 
+        display: inline-block;
         /* margin-left: 10px; */
         color: black; position: absolute; right: 0; top: 0;
     }
@@ -2745,10 +2746,11 @@ ul,li{
         display: inline-block; text-indent: -9999px;
         background: url('../images/logout.png') left center / contain no-repeat ;
         width: 10px; line-height: 10px; position: absolute;
-        right: 20%; top: 0;
+        right: 16%; top: 0;
     }
     .orderContainer aside div > a{
         font-size: 10px; font-weight: 400; 
+        display: inline-block;
         /* margin-left: 10px; */
         color: black; position: absolute; right: 0; top: 0;
     }
@@ -2877,10 +2879,11 @@ ul,li{
         display: inline-block; text-indent: -9999px;
         background: url('../images/logout.png') left center / contain no-repeat ;
         width: 10px; line-height: 10px; position: absolute;
-        right: 20%; top: 0;
+        right: 16%; top: 0;
     }
     .addressContainer aside div > a{
         font-size: 10px; font-weight: 400; 
+        display: inline-block;
         /* margin-left: 10px; */
         color: black; position: absolute; right: 0; top: 0;
     }
@@ -3034,10 +3037,11 @@ ul,li{
         display: inline-block; text-indent: -9999px;
         background: url('../images/logout.png') left center / contain no-repeat ;
         width: 10px; line-height: 10px; position: absolute;
-        right: 20%; top: 0;
+        right: 16%; top: 0;
     }
     .newContainer aside div > a{
         font-size: 10px; font-weight: 400; 
+        display: inline-block;
         /* margin-left: 10px; */
         color: black; position: absolute; right: 0; top: 0;
     }
@@ -3219,10 +3223,11 @@ ul,li{
         display: inline-block; text-indent: -9999px;
         background: url('../images/logout.png') left center / contain no-repeat ;
         width: 10px; line-height: 10px; position: absolute;
-        right: 20%; top: 0;
+        right: 16%; top: 0;
     }
     .infoContainer aside div > a{
         font-size: 10px; font-weight: 400; 
+        display: inline-block;
         /* margin-left: 10px; */
         color: black; position: absolute; right: 0; top: 0;
     }
@@ -3426,10 +3431,11 @@ ul,li{
         display: inline-block; text-indent: -9999px;
         background: url('../images/logout.png') left center / contain no-repeat ;
         width: 10px; line-height: 10px; position: absolute;
-        right: 20%; top: 0;
+        right: 16%; top: 0;
     }
     .methodContainer aside div > a{
         font-size: 10px; font-weight: 400; 
+        display: inline-block;
         /* margin-left: 10px; */
         color: black; position: absolute; right: 0; top: 0;
     }
@@ -3558,10 +3564,11 @@ ul,li{
         display: inline-block; text-indent: -9999px;
         background: url('../images/logout.png') left center / contain no-repeat ;
         width: 10px; line-height: 10px; position: absolute;
-        right: 20%; top: 0;
+        right: 16%; top: 0;
     }
     .subContainer aside div > a{
         font-size: 10px; font-weight: 400; 
+        display: inline-block;
         /* margin-left: 10px; */
         color: black; position: absolute; right: 0; top: 0;
     }
