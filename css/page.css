@@ -2465,8 +2465,8 @@ ul,li{
         font-size: 10px; font-weight: 400; display: inline-block;
     }
     .checkoutContainer > div:last-of-type > div div strong{
-        font-size: 10px; font-weight: 700; position: absolute;
-        right: 0; bottom: 0;
+        font-size: 10px; font-weight: 700; 
+        /* position: absolute; right: 0; bottom: 0; */
     }
     .checkoutContainer > div:last-of-type > span{
         border-bottom: 2px solid #b5b5b5; display: block; position: relative;
