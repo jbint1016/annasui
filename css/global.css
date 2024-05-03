@@ -916,7 +916,9 @@ ul,li{
     #newsPopup{
         background-color: white; 
         padding: 105px 50px 30px;
-        position: fixed; max-width: 445px; font-family:'Sen';
+        position: fixed; 
+        /* max-width: 445px;  */
+        font-family:'Sen';
         width: 50%; right: 0; top: 0; z-index: 100;
     }
     #newsPopup small{
